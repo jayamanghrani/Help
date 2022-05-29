@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+    <description>Empty web.xml file for Web Application</description>
+    <servlet>
+        <servlet-name>action</servlet-name>
+        <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+        <init-param>
+            <param-name>config</param-name>
+            <param-value>/WEB-INF/struts-config.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>action</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+       <servlet>
+    <servlet-name>log4j-init</servlet-name>
+    <servlet-class>ticketTraceWebApp.config.Log4jInit</servlet-class>
+
+    <init-param>
+      <param-name>log4j-init-file</param-name>
+      <param-value>ticketTraceWebApp/log4j.properties</param-value>
+    </init-param>
+
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+    <session-config>
+    <!--Comment by alauki on 27.10.09 to check session expiry changed 35 mins to 1 min for testing-->
+        <session-timeout>35</session-timeout>
+    </session-config>
+    <mime-mapping>
+        <extension>html</extension>
+        <mime-type>text/html</mime-type>
+    </mime-mapping>
+    <mime-mapping>
+        <extension>txt</extension>
+        <mime-type>text/plain</mime-type>
+    </mime-mapping>
+</web-app>

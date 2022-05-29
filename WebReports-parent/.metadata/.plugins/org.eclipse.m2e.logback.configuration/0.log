@@ -1,0 +1,342 @@
+2020-12-03 12:54:25,178 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.5.1/maven-compiler-plugin-2.5.1.jar
+2020-12-03 12:54:26,440 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.5.1/maven-compiler-plugin-2.5.1.jar
+2020-12-03 12:54:33,196 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.5.1/maven-compiler-plugin-2.5.1.pom
+2020-12-03 12:54:34,256 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.5.1/maven-compiler-plugin-2.5.1.pom
+2020-12-03 12:54:39,670 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+2020-12-03 12:54:40,880 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+2020-12-03 12:54:45,440 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom
+2020-12-03 12:54:46,319 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom
+2020-12-03 12:54:56,375 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.9.1/plexus-compiler-api-1.9.1.pom
+2020-12-03 12:54:57,015 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.9.1/plexus-compiler-api-1.9.1.pom
+2020-12-03 12:54:58,877 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler/1.9.1/plexus-compiler-1.9.1.pom
+2020-12-03 12:54:59,833 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler/1.9.1/plexus-compiler-1.9.1.pom
+2020-12-03 12:55:02,110 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-components/1.1.20/plexus-components-1.1.20.pom
+2020-12-03 12:55:03,418 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-components/1.1.20/plexus-components-1.1.20.pom
+2020-12-03 12:55:07,120 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.9.1/plexus-compiler-manager-1.9.1.pom
+2020-12-03 12:55:07,964 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.9.1/plexus-compiler-manager-1.9.1.pom
+2020-12-03 12:55:09,755 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.9.1/plexus-compiler-javac-1.9.1.pom
+2020-12-03 12:55:10,379 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.9.1/plexus-compiler-javac-1.9.1.pom
+2020-12-03 12:55:12,405 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compilers/1.9.1/plexus-compilers-1.9.1.pom
+2020-12-03 12:55:13,284 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compilers/1.9.1/plexus-compilers-1.9.1.pom
+2020-12-03 12:55:15,602 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.9.1/plexus-compiler-api-1.9.1.jar
+2020-12-03 12:55:17,039 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.9.1/plexus-compiler-api-1.9.1.jar
+2020-12-03 12:55:17,475 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.9.1/plexus-compiler-manager-1.9.1.jar
+2020-12-03 12:55:18,342 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.9.1/plexus-compiler-manager-1.9.1.jar
+2020-12-03 12:55:18,659 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.9.1/plexus-compiler-javac-1.9.1.jar
+2020-12-03 12:55:19,819 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.9.1/plexus-compiler-javac-1.9.1.jar
+2020-12-03 12:55:28,168 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsWebComp:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsWebComp\pom.xml.
+2020-12-03 12:55:46,870 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:55:47,486 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:56:19,112 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/wsdl/wsdl/1.1/wsdl-1.1.pom
+2020-12-03 12:56:19,195 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:56:20,952 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/wsdl4j/wsdl4j/1.6/wsdl4j-1.6.pom
+2020-12-03 12:56:20,982 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 12:56:22,760 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/apache/axis/axis-jaxrpc/1.1/axis-jaxrpc-1.1.pom
+2020-12-03 12:56:22,763 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 12:56:24,422 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/axis/axis/1.4/axis-1.4.pom
+2020-12-03 12:56:25,372 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/axis/axis/1.4/axis-1.4.pom
+2020-12-03 12:56:27,210 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/axis/axis-jaxrpc/1.4/axis-jaxrpc-1.4.pom
+2020-12-03 12:56:28,098 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/axis/axis-jaxrpc/1.4/axis-jaxrpc-1.4.pom
+2020-12-03 12:56:29,782 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/apache/axis/axis-jaxrpc/1.4/axis-jaxrpc-1.4.pom
+2020-12-03 12:56:30,502 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/apache/axis/axis-jaxrpc/1.4/axis-jaxrpc-1.4.pom
+2020-12-03 12:56:32,130 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/axis/axis-saaj/1.4/axis-saaj-1.4.pom
+2020-12-03 12:56:32,986 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/axis/axis-saaj/1.4/axis-saaj-1.4.pom
+2020-12-03 12:56:34,748 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/apache/axis/axis-saaj/1.4/axis-saaj-1.4.pom
+2020-12-03 12:56:35,523 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/apache/axis/axis-saaj/1.4/axis-saaj-1.4.pom
+2020-12-03 12:56:37,234 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/axis/axis-wsdl4j/1.5.1/axis-wsdl4j-1.5.1.pom
+2020-12-03 12:56:38,119 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/axis/axis-wsdl4j/1.5.1/axis-wsdl4j-1.5.1.pom
+2020-12-03 12:56:39,781 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/commons-discovery/commons-discovery/0.2/commons-discovery-0.2.pom
+2020-12-03 12:56:40,823 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/commons-discovery/commons-discovery/0.2/commons-discovery-0.2.pom
+2020-12-03 12:56:42,692 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/saaj/saaj/1.2/saaj-1.2.pom
+2020-12-03 12:56:42,695 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 12:56:51,146 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/wsdl4j/wsdl4j/1.6/wsdl4j-1.6.jar
+2020-12-03 12:56:52,376 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/apache/axis/axis-jaxrpc/1.1/axis-jaxrpc-1.1.jar
+2020-12-03 12:56:54,095 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/axis/axis/1.4/axis-1.4.jar
+2020-12-03 12:57:01,848 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/axis/axis/1.4/axis-1.4.jar
+2020-12-03 12:57:02,156 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/org/apache/axis/axis-saaj/1.4/axis-saaj-1.4.jar
+2020-12-03 12:57:03,012 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/org/apache/axis/axis-saaj/1.4/axis-saaj-1.4.jar
+2020-12-03 12:57:03,320 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/axis/axis-wsdl4j/1.5.1/axis-wsdl4j-1.5.1.jar
+2020-12-03 12:57:04,755 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/axis/axis-wsdl4j/1.5.1/axis-wsdl4j-1.5.1.jar
+2020-12-03 12:57:05,062 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo1.maven.org/maven2/commons-discovery/commons-discovery/0.2/commons-discovery-0.2.jar
+2020-12-03 12:57:06,356 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/commons-discovery/commons-discovery/0.2/commons-discovery-0.2.jar
+2020-12-03 12:57:06,676 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/saaj/saaj/1.2/saaj-1.2.jar
+2020-12-03 12:57:07,951 [Worker-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo1.maven.org/maven2/wsdl/wsdl/1.1/wsdl-1.1.jar
+2020-12-03 12:57:15,443 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsCommons:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsCommons\pom.xml.
+2020-12-03 12:57:16,782 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsUtil:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsUtil\pom.xml.
+2020-12-03 12:57:17,816 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsConfigUtil:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsConfigUtil\pom.xml.
+2020-12-03 12:57:18,370 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsComponentInvoker:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsComponentInvoker\pom.xml.
+2020-12-03 12:57:27,529 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsASBO:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsASBO\pom.xml.
+2020-12-03 12:57:27,859 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsServiceObjects:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsServiceObjects\pom.xml.
+2020-12-03 12:57:28,144 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsController:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsController\pom.xml.
+2020-12-03 12:57:28,754 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsTransformation:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsTransformation\pom.xml.
+2020-12-03 12:57:29,122 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsSecurity:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportSecurity\pom.xml.
+2020-12-03 12:57:30,278 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsCache:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsCache\pom.xml.
+2020-12-03 12:57:41,324 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:57:41,383 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:57:42,904 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:57:42,909 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 12:57:42,919 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 12:57:43,026 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 12:57:57,927 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsConfigUtil/src/main/java
+2020-12-03 12:57:57,928 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /WebReportsConfigUtil/src/main/resources
+2020-12-03 12:57:57,929 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsConfigUtil/src/test/java
+2020-12-03 12:57:59,029 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsCommons/src/main/java
+2020-12-03 12:57:59,029 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsCommons/src/test/java
+2020-12-03 12:57:59,212 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsUtil/src/main/java
+2020-12-03 12:57:59,212 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsUtil/src/test/java
+2020-12-03 12:57:59,329 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsASBO/src/main/java
+2020-12-03 12:57:59,329 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsASBO/src/test/java
+2020-12-03 12:57:59,510 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsCache/src/main/java
+2020-12-03 12:57:59,510 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /WebReportsCache/src/main/resources
+2020-12-03 12:57:59,510 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsCache/src/test/java
+2020-12-03 12:57:59,843 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsComponentInvoker/src/main/java
+2020-12-03 12:57:59,844 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsComponentInvoker/src/test/java
+2020-12-03 12:57:59,983 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsServiceObjects/src/main/java
+2020-12-03 12:57:59,984 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsServiceObjects/src/test/java
+2020-12-03 12:58:00,104 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsTransformation/src/main/java
+2020-12-03 12:58:00,104 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsTransformation/src/test/java
+2020-12-03 12:58:09,854 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsController/src/main/java
+2020-12-03 12:58:09,855 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsController/src/test/java
+2020-12-03 12:58:09,973 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportSecurity/src/main/java
+2020-12-03 12:58:09,973 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportSecurity/src/test/java
+2020-12-03 12:58:10,280 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsWebComp/src/main/java
+2020-12-03 12:58:10,280 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /WebReportsWebComp/src/main/resources
+2020-12-03 12:58:10,280 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebReportsWebComp/src/test/java
+2020-12-03 12:58:12,245 [Worker-3] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 11 project(s) in 244 sec
+2020-12-03 12:58:14,122 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsWebComp:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsWebComp\pom.xml.
+2020-12-03 12:58:14,284 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:14,291 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:14,534 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:14,540 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 12:58:14,544 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:14,687 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 12:58:17,852 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsCommons:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsCommons\pom.xml.
+2020-12-03 12:58:18,149 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsUtil:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsUtil\pom.xml.
+2020-12-03 12:58:18,480 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsConfigUtil:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsConfigUtil\pom.xml.
+2020-12-03 12:58:19,829 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsComponentInvoker:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsComponentInvoker\pom.xml.
+2020-12-03 12:58:20,884 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsASBO:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsASBO\pom.xml.
+2020-12-03 12:58:21,517 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsServiceObjects:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsServiceObjects\pom.xml.
+2020-12-03 12:58:21,876 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsCommons:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsCommons\pom.xml.
+2020-12-03 12:58:21,962 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:21,967 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:23,457 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:24,439 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 12:58:24,445 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:24,489 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 12:58:29,140 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:29,141 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsCommons\src\main\resources
+2020-12-03 12:58:29,143 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:29,144 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsCommons\src\test\resources
+2020-12-03 12:58:29,953 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsASBO:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsASBO\pom.xml.
+2020-12-03 12:58:30,164 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:30,196 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:30,378 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:31,613 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:31,614 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsASBO\src\main\resources
+2020-12-03 12:58:31,615 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:31,617 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsASBO\src\test\resources
+2020-12-03 12:58:31,764 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsConfigUtil:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsConfigUtil\pom.xml.
+2020-12-03 12:58:31,842 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:31,847 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:33,175 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:33,270 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-03 12:58:33,281 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:33,282 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsConfigUtil\src\test\resources
+2020-12-03 12:58:33,378 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsServiceObjects:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsServiceObjects\pom.xml.
+2020-12-03 12:58:33,475 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:33,481 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:33,708 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:34,731 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:34,732 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsServiceObjects\src\main\resources
+2020-12-03 12:58:34,733 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:34,734 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsServiceObjects\src\test\resources
+2020-12-03 12:58:34,955 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsUtil:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsUtil\pom.xml.
+2020-12-03 12:58:35,081 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:35,086 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:36,578 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:36,579 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsUtil\src\main\resources
+2020-12-03 12:58:36,580 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:36,581 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsUtil\src\test\resources
+2020-12-03 12:58:36,653 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsCache:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsCache\pom.xml.
+2020-12-03 12:58:36,861 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:36,866 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:38,931 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:38,932 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-03 12:58:38,936 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:38,937 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsCache\src\test\resources
+2020-12-03 12:58:39,032 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsComponentInvoker:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsComponentInvoker\pom.xml.
+2020-12-03 12:58:39,133 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:39,137 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:39,314 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:39,328 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 12:58:39,333 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:39,380 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 12:58:40,858 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:40,859 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsComponentInvoker\src\main\resources
+2020-12-03 12:58:40,860 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:40,863 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsComponentInvoker\src\test\resources
+2020-12-03 12:58:40,963 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsTransformation:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsTransformation\pom.xml.
+2020-12-03 12:58:41,056 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:41,061 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:41,272 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:44,656 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:44,657 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsTransformation\src\main\resources
+2020-12-03 12:58:44,659 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:44,661 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsTransformation\src\test\resources
+2020-12-03 12:58:44,755 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsController:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsController\pom.xml.
+2020-12-03 12:58:44,878 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:44,884 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:45,082 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:45,094 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 12:58:45,098 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:45,143 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 12:58:46,256 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:46,257 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsController\src\main\resources
+2020-12-03 12:58:46,258 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:46,258 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsController\src\test\resources
+2020-12-03 12:58:46,358 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsSecurity:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportSecurity\pom.xml.
+2020-12-03 12:58:46,433 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:46,437 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:46,912 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:46,929 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 12:58:46,934 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:46,976 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 12:58:48,833 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:48,834 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportSecurity\src\main\resources
+2020-12-03 12:58:48,835 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:58:48,836 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportSecurity\src\test\resources
+2020-12-03 12:58:49,082 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsWebComp:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsWebComp\pom.xml.
+2020-12-03 12:58:49,248 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:49,253 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:49,672 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:49,676 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 12:58:49,681 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:49,733 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 12:58:56,326 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:56,330 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:58:56,515 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:56,519 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 12:58:56,523 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 12:58:56,569 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 12:59:04,261 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:04,263 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-12-03 12:59:04,269 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:04,270 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsWebComp\src\test\resources
+2020-12-03 12:59:04,606 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsWebComp:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsWebComp\pom.xml.
+2020-12-03 12:59:04,706 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:04,712 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:04,894 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:59:04,898 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 12:59:04,903 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 12:59:04,945 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 12:59:06,230 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsCommons:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsCommons\pom.xml.
+2020-12-03 12:59:06,686 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsUtil:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsUtil\pom.xml.
+2020-12-03 12:59:07,080 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsConfigUtil:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsConfigUtil\pom.xml.
+2020-12-03 12:59:07,493 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsComponentInvoker:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsComponentInvoker\pom.xml.
+2020-12-03 12:59:09,035 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsASBO:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsASBO\pom.xml.
+2020-12-03 12:59:09,415 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsServiceObjects:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsServiceObjects\pom.xml.
+2020-12-03 12:59:09,897 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsController:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsController\pom.xml.
+2020-12-03 12:59:11,204 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsTransformation:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsTransformation\pom.xml.
+2020-12-03 12:59:11,658 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsSecurity:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportSecurity\pom.xml.
+2020-12-03 12:59:12,288 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tcs.webreports:WebReportsCache:0.0.1-SNAPSHOT @ C:\Webreports Workspace\WebReports-parent\WebReportsCache\pom.xml.
+2020-12-03 12:59:13,543 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:13,547 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:13,723 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:59:13,727 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 12:59:13,732 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 12:59:13,773 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 12:59:17,339 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:17,343 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:18,063 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:18,065 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsCommons\src\main\resources
+2020-12-03 12:59:18,066 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:18,067 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsCommons\src\test\resources
+2020-12-03 12:59:18,162 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:18,166 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:18,324 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:59:18,766 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:18,767 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsASBO\src\main\resources
+2020-12-03 12:59:18,768 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:18,769 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsASBO\src\test\resources
+2020-12-03 12:59:18,852 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:18,856 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:20,171 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:20,174 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-03 12:59:20,175 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:20,176 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsConfigUtil\src\test\resources
+2020-12-03 12:59:20,308 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:20,312 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:20,467 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:59:20,786 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:20,788 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsServiceObjects\src\main\resources
+2020-12-03 12:59:20,789 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:20,790 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsServiceObjects\src\test\resources
+2020-12-03 12:59:20,891 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:20,895 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:21,300 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:21,302 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsUtil\src\main\resources
+2020-12-03 12:59:21,305 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:21,306 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsUtil\src\test\resources
+2020-12-03 12:59:21,506 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:21,511 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:22,063 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:22,065 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-03 12:59:22,067 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:22,069 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsCache\src\test\resources
+2020-12-03 12:59:22,205 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:22,209 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:22,365 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:59:22,375 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 12:59:22,379 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 12:59:22,419 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 12:59:23,221 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:23,221 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsComponentInvoker\src\main\resources
+2020-12-03 12:59:23,222 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:23,224 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsComponentInvoker\src\test\resources
+2020-12-03 12:59:23,334 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:23,338 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:23,608 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:59:24,095 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:24,096 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsTransformation\src\main\resources
+2020-12-03 12:59:24,098 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:24,099 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsTransformation\src\test\resources
+2020-12-03 12:59:24,212 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:24,216 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:24,429 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:59:24,443 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 12:59:24,448 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 12:59:24,493 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 12:59:25,125 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:25,127 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsController\src\main\resources
+2020-12-03 12:59:25,128 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:25,130 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsController\src\test\resources
+2020-12-03 12:59:25,256 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:25,260 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:25,624 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:59:25,643 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 12:59:25,649 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 12:59:25,694 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 12:59:27,113 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:27,114 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportSecurity\src\main\resources
+2020-12-03 12:59:27,116 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:27,117 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportSecurity\src\test\resources
+2020-12-03 12:59:27,354 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:27,361 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 12:59:27,547 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 12:59:27,552 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 12:59:27,556 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 12:59:27,596 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 12:59:28,254 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:28,255 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-03 12:59:28,255 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 12:59:28,256 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsWebComp\src\test\resources
+2020-12-03 13:28:50,212 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context:spring-context:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 13:28:50,447 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for spring-context-support:spring-context-support:jar:4.1.1.RELEASE is missing, no dependency information available
+2020-12-03 13:28:55,244 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl:wsdl:jar:1.1 is missing, no dependency information available
+2020-12-03 13:28:55,259 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for wsdl4j:wsdl4j:jar:1.6 is missing, no dependency information available
+2020-12-03 13:28:55,272 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.axis:axis-jaxrpc:jar:1.1 is missing, no dependency information available
+2020-12-03 13:28:56,321 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for saaj:saaj:jar:1.2 is missing, no dependency information available
+2020-12-03 13:29:45,805 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 13:29:46,064 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-12-03 13:29:46,174 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-12-03 13:29:46,175 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Webreports Workspace\WebReports-parent\WebReportsWebComp\src\test\resources

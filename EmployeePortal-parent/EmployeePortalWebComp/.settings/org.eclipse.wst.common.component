@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="EmployeePortalWebComp">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="EmployeePortalUtil-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/EmployeePortalUtil/EmployeePortalUtil">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EmployeePortalConfigUtil-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/EmployeePortalConfigUtil/EmployeePortalConfigUtil">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EmployeePortalController-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/EmployeePortalController/EmployeePortalController">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EmployeePortalComponentInvoker-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/EmployeePortalComponentInvoker/EmployeePortalComponentInvoker">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EmployeePortalCache-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/EmployeePortalCache/EmployeePortalCache">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EmployeePortalPersist-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/EmployeePortalPersist/EmployeePortalPersist">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EmployeePortalTransformation-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/EmployeePortalTransformation/EmployeePortalTransformation">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EmployeePortalServiceObjects-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/EmployeePortalServiceObjects/EmployeePortalServiceObjects">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EmployeePortalASBO-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/EmployeePortalASBO/EmployeePortalASBO">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EmployeePortalCommons-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/EmployeePortalCommons/EmployeePortalCommons">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EmployeePortalAccessManager-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/EmployeePortalAccessManager/EmployeePortalAccessManager">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/EmployeePortalWebComp/target/classes"/>
+        <property name="context-root" value="EmployeePortalWebComp"/>
+    </wb-module>
+</project-modules>

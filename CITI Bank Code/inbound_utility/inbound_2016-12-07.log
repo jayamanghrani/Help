@@ -1,0 +1,10 @@
+2016-12-07 15:54:31 DEBUG FilecopytoOF:34 - Utility started at :: 15:54:30
+2016-12-07 15:54:33 INFO  SftpUtility:59 - Entry moveFileToOFDir method 
+2016-12-07 15:54:35 ERROR FilecopytoOF:78 - Exception Occured :: Error Message -null
+2016-12-07 15:54:35 ERROR FilecopytoOF:79 -  Exception Occurred ::
+java.lang.NullPointerException
+	at com.nia.helper.SftpUtility.moveFileToOFDir(SftpUtility.java:86)
+	at com.nia.helper.SftpUtility.copyFileFromInboundBToOF(SftpUtility.java:51)
+	at com.nia.helper.ResourceManager.copyFileFromInboundBToOF(ResourceManager.java:338)
+	at com.nia.main.FilecopytoOF.copyFileFromInboundBToOF(FilecopytoOF.java:87)
+	at com.nia.main.FilecopytoOF.main(FilecopytoOF.java:54)

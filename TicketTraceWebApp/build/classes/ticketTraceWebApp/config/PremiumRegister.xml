@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap      
+          PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+          "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="PremiumRegister">
+    
+    <typeAlias alias="PremiumRegisterDetails" type="reports.vo.PremiumRegisterVO"/> 
+    
+   <select id="PremiumRegisterDetails"   resultClass="PremiumRegisterDetails" parameterClass="java.util.HashMap">     
+   select 
+    substr(T46549.atn_voucher_number ,1,6)                  as LOCATION,
+    concat(T4107.POLICY_NUMBER, ':')                        as POLICYNUMBER,
+    case when not T46549.ATN_TREATY_CODE is null then 
+    concat(T46549.ATN_TREATY_CODE, ':') end                 as ENDORSEMENTNUMBER,
+    T4903.POLICY_HOLDER_NAME                                as POLICYHOLDERNAME,
+    T4903.POLICY_HOLDER_TYPE                                as POLICYHOLDERTYPE,
+    T5024.EFFECTIVE_START_DATE                              as EFFECTIVESTARTDATE,
+    T5024.POLICY_EXPIRY_DATE                                as POLICYEXPIRYDATE,
+    T5024.SUM_INSURED                                       as SUMINSURED,
+    case  when T4903.AGENT_PARTY_ID is null then case  when T4903.BROKER_ID is null then T46333.PARTY_CODE else T4875.BROKER_CODE end else
+    T4943.PARTY_CODE end                                    as AGENTCODE,
+    case  when T4903.DEV_OFFICER_NAME is null then case  when T46333.BANK_NAME is null then T4943.AGENT_NAME else T46333.BANK_NAME end 
+    else T4903.DEV_OFFICER_NAME end                         as DEVOFFICERNAME,
+    sum(case when T2470.ACC_ACCOUNT_TYPE = '1101' then (T2544.ATD_CREDIT_AMOUNT - T2544.ATD_DEBIT_AMOUNT) else 0 end) 
+                                                            as PREMIUMAMOUNT,
+    sum(case when bb.ACC_GL_CODE = '5555' then (T2544.ATD_CREDIT_AMOUNT - T2544.ATD_DEBIT_AMOUNT) else 0 end) 
+                                                            as SERVICETAX,
+    sum(case when bb.ACC_GL_CODE = '5475' then (T2544.ATD_CREDIT_AMOUNT - T2544.ATD_DEBIT_AMOUNT) else 0 end) 
+                                                            as STAMPDUTY
+    from
+    POLICY T4107,
+    PRODUCT T4345,
+    ((ods.stakeholder_rltn_view_decomp T4903 left outer join BROKER_VIEW T4875
+      On T4875.BROKER_PARTY_ID = T4903.BROKER_ID)
+           left outer join AGENT_INDIVI_CORP_VIEW T4943 On T4903.AGENT_PARTY_ID =  T4943.PARTY_ID)
+           left outer join BANCASSURANCE_VIEW T46333 On T4903.BANCASSURANCE_ID =  T46333.PARTY_ID,
+    POLICY_DETAIL_PRD_TAB T5024,
+    ACCOUNT T2470,
+    Account bb,
+    ACCOUNTING_TRN_DETAIL T2544,
+    accounting_transaction T46549
+    where  ( T4107.POLICY_ID = T4903.POLICY_ID and T4107.POLICY_ID =
+    T5024.POLICY_ID
+    and T4107.PRODUCT_ID = T4345.PRODUCT_ID
+    and T2544.ATN_ACCOUNTING_TRANSACTION_ID =T46549.ATN_ACCOUNTING_TRANSACTION_ID
+    and T2470.ACC_ACCOUNT_ID = T2544.ACC_ACCOUNT_ID
+    and T2470.ACC_ACC_ACCOUNT_ID = bb.ACC_ACCOUNT_ID
+    and T4107.policy_id = T46549.policy_id
+    and substr(T46549.atn_voucher_number ,1,6) = #officeCode# 
+    and (T2470.ACC_ACCOUNT_TYPE in ('1101', '5475', '5555'))
+    <isNotEqual prepend="AND" property="dept" compareValue="All">                    
+               T4345.LOB_ID = #dept#
+    </isNotEqual>
+    and T46549.ATN_TRANSACTION_DATE between to_date('$startDate$','DD-MM-YYYY')and to_date('$endDate$','DD-MM-YYYY') )
+    group by T4903.POLICY_HOLDER_NAME, T4903.POLICY_HOLDER_TYPE,
+    T5024.EFFECTIVE_START_DATE,
+    T5024.SUM_INSURED,
+    T5024.POLICY_EXPIRY_DATE,substr(T46549.atn_voucher_number,1,6),
+    case  when not T46549.ATN_TREATY_CODE is null then
+    concat(T46549.ATN_TREATY_CODE, ':') end , 
+    case  when T4903.AGENT_PARTY_ID is
+    null then case  when T4903.BROKER_ID is null then T46333.PARTY_CODE else
+    T4875.BROKER_CODE end  else T4943.PARTY_CODE end , case  when
+    T4903.DEV_OFFICER_NAME is null then case  when T46333.BANK_NAME is null
+    then T4943.AGENT_NAME else T46333.BANK_NAME end  else T4903.DEV_OFFICER_NAME end,
+    concat(T4107.POLICY_NUMBER, ':')
+    order by POLICYNUMBER, ENDORSEMENTNUMBER
+
+
+<!--
+
+   select 
+    substr(T46549.atn_voucher_number ,1,6)          as LOCATION,
+    concat(T4107.POLICY_NUMBER, ':')                as POLICYNUMBER,
+    case when not T46549.ATN_TREATY_CODE is null then 
+    concat(T46549.ATN_TREATY_CODE, ':') end         as ENDORSEMENTNUMBER,
+    T4903.POLICY_HOLDER_NAME                        as POLICYHOLDERNAME,
+    T4903.POLICY_HOLDER_TYPE                        as POLICYHOLDERTYPE,
+    T5024.EFFECTIVE_START_DATE                      as EFFECTIVESTARTDATE,
+    T5024.POLICY_EXPIRY_DATE                        as POLICYEXPIRYDATE,
+    T5024.SUM_INSURED                               as SUMINSURED,
+    case  when T4903.AGENT_PARTY_ID is null then case  when T4903.BROKER_ID is null then T46333.PARTY_CODE else T4875.BROKER_CODE end else
+    T4943.PARTY_CODE end                            as AGENTCODE,
+    case  when T4903.DEV_OFFICER_NAME is null then case  when T46333.BANK_NAME is null then T4943.AGENT_NAME else T46333.BANK_NAME end 
+    else T4903.DEV_OFFICER_NAME end                 as DEVOFFICERNAME,
+    sum(case when T2470.ACC_ACCOUNT_TYPE = '1101' then (T2544.ATD_CREDIT_AMOUNT - T2544.ATD_DEBIT_AMOUNT) else 0 end) 
+                                                    as PREMIUMAMOUNT,       
+    sum(case when bb.ACC_GL_CODE = '5555' then (T2544.ATD_CREDIT_AMOUNT - T2544.ATD_DEBIT_AMOUNT) else 0 end)
+                                                    as SERVICETAX,
+    sum(case when bb.ACC_GL_CODE = '5475' then (T2544.ATD_CREDIT_AMOUNT - T2544.ATD_DEBIT_AMOUNT) else 0 end) 
+                                                    as STAMPDUTY
+    from
+    POLICY T4107,
+    PRODUCT T4345,
+    ((stakeholder_rltn_view_dcomp T4903 left outer join BROKER_VIEW T4875
+      On T4875.BROKER_PARTY_ID = T4903.BROKER_ID)
+           left outer join AGENT_INDIVI_CORP_VIEW T4943 On T4903.AGENT_PARTY_ID =  T4943.PARTY_ID)
+           left outer join BANCASSURANCE_VIEW T46333 On T4903.BANCASSURANCE_ID =  T46333.PARTY_ID,
+    POLICY_DETAIL_PRD_TAB T5024,
+    ACCOUNT T2470,
+    Account bb,
+    ACCOUNTING_TRN_DETAIL_NW T2544,
+    accounting_transaction_new T46549
+    where  ( T4107.POLICY_ID = T4903.POLICY_ID and T4107.POLICY_ID =
+    T5024.POLICY_ID
+    and T4107.PRODUCT_ID = T4345.PRODUCT_ID
+    and T2544.ATN_ACCOUNTING_TRANSACTION_ID =T46549.ATN_ACCOUNTING_TRANSACTION_ID
+    and T2470.ACC_ACCOUNT_ID = T2544.ACC_ACCOUNT_ID
+    and T2470.ACC_ACC_ACCOUNT_ID = bb.ACC_ACCOUNT_ID
+    and T4107.policy_id = T46549.policy_id
+    and substr(T46549.atn_voucher_number ,1,6) = #officeCode# 
+    and (T2470.ACC_ACCOUNT_TYPE in ('1101', '5475', '5555'))
+    and T4345.LOB_ID = #dept#
+    and T46549.ATN_TRANSACTION_DATE between to_date('$startDate$','DD-MM-YYYY')and to_date('$endDate$','DD-MM-YYYY') )
+    group by T4903.POLICY_HOLDER_NAME, T4903.POLICY_HOLDER_TYPE,
+    T5024.EFFECTIVE_START_DATE,
+    T5024.SUM_INSURED,
+    T5024.POLICY_EXPIRY_DATE,substr(T46549.atn_voucher_number,1,6),
+    case  when not T46549.ATN_TREATY_CODE is null then
+    concat(T46549.ATN_TREATY_CODE, ':') end , 
+    case  when T4903.AGENT_PARTY_ID is
+    null then case  when T4903.BROKER_ID is null then T46333.PARTY_CODE else
+    T4875.BROKER_CODE end  else T4943.PARTY_CODE end , case  when
+    T4903.DEV_OFFICER_NAME is null then case  when T46333.BANK_NAME is null
+    then T4943.AGENT_NAME else T46333.BANK_NAME end  else T4903.DEV_OFFICER_NAME end,
+    concat(T4107.POLICY_NUMBER, ':')
+    order by POLICYNUMBER, ENDORSEMENTNUMBER
+
+
+
+
+    select case  when not T46549.ATN_TREATY_CODE is null then
+   concat(T46549.ATN_TREATY_CODE, ':') end  as EndorsementNumber,
+     T4903.POLICY_HOLDER_NAME as POLICYHOLDERNAME,
+     T4903.POLICY_HOLDER_TYPE as POLICYHOLDERTYPE,
+     T5024.EFFECTIVE_START_DATE as EFFECTIVESTARTDATE,
+     T5024.POLICY_EXPIRY_DATE as POLICYEXPIRYDATE,
+     T5024.SUM_INSURED as SUMINSURED,
+     case  when T4903.AGENT_PARTY_ID is null then case  when T4903.BROKER_ID
+   is null then T46333.PARTY_CODE else T4875.BROKER_CODE end  else
+   T4943.PARTY_CODE end  as AGENTCODE,
+     sum(case when T2470.ACC_ACCOUNT_TYPE = '1101' then
+   (T2544.ATD_CREDIT_AMOUNT - T2544.ATD_DEBIT_AMOUNT) end) as PREMIUMAMOUNT,
+     sum(case when bb.ACC_GL_CODE = '5555' then (T2544.ATD_CREDIT_AMOUNT -
+    T2544.ATD_DEBIT_AMOUNT) end) as SERVICETAX,
+     sum(case when bb.ACC_GL_CODE = '5475' then (T2544.ATD_CREDIT_AMOUNT -
+   T2544.ATD_DEBIT_AMOUNT) end) as StampDuty,
+     case T4345.LOB_ID when 11 then '11 Fire' when 21 then '21 Marine Cargo'
+   when 22 then '22 Marine Hull' when 31 then '31 Motor' when 34 then '34
+   Health Insurance' when 42 then '42 PA' when 43 then '43 Aviation' when 44
+   then '44 Engineering' when 45 then '45 Credit Insurance' when 46 then '46
+   Traditional Business - Miscellaneous' when 47 then '47 Rural Insurance -
+   Miscellaneous' when 48 then '48 Misc - Non Traditional Business' when 50
+   then '50 Credit Shield Insurance' end  as Department,
+     substr(T46549.atn_voucher_number ,1,6) as LOCATION,
+     concat(T4107.POLICY_NUMBER, ':') as POLICYNUMBER,
+     case  when T4903.DEV_OFFICER_NAME is null then case  when
+ T46333.BANK_NAME is null then T4943.AGENT_NAME else T46333.BANK_NAME end
+ else T4903.DEV_OFFICER_NAME end  as DEVOFFICERNAME
+ from
+     POLICY T4107,
+     PRODUCT T4345,
+     ((stakeholder_rltn_view_dcomp T4903 left outer join BROKER_VIEW T4875
+ On T4875.BROKER_PARTY_ID = T4903.BROKER_ID)
+     left outer join AGENT_INDIVI_CORP_VIEW T4943 On T4903.AGENT_PARTY_ID =
+ T4943.PARTY_ID)
+     left outer join BANCASSURANCE_VIEW T46333 On T4903.BANCASSURANCE_ID =
+ T46333.PARTY_ID,
+     POLICY_DETAIL_PRD_TAB T5024,
+     ACCOUNT T2470,
+     Account bb,
+     ACCOUNTING_TRN_DETAIL_NW T2544,
+     accounting_transaction_new T46549
+ where  ( T4107.POLICY_ID = T4903.POLICY_ID and T4107.POLICY_ID =
+ T5024.POLICY_ID
+ and T4107.PRODUCT_ID = T4345.PRODUCT_ID
+ and T2544.ATN_ACCOUNTING_TRANSACTION_ID =
+ T46549.ATN_ACCOUNTING_TRANSACTION_ID
+ and T2470.ACC_ACCOUNT_ID = T2544.ACC_ACCOUNT_ID
+ and T2470.ACC_ACC_ACCOUNT_ID = bb.ACC_ACCOUNT_ID
+ and T4107.policy_id = T46549.policy_id
+ and substr(T46549.atn_voucher_number ,1,6) = #officeCode# and
+ (T2470.ACC_ACCOUNT_TYPE in ('1101', '5475', '5555'))
+ and T2470.acc_department_code = #dept#
+ and T46549.ATN_TRANSACTION_DATE between to_date('$startDate$','DD-MM-YYYY')and to_date('$endDate$','DD-MM-YYYY') )
+ group by  case  when not T46549.ATN_TREATY_CODE is null then
+   concat(T46549.ATN_TREATY_CODE, ':') end,T4903.POLICY_HOLDER_NAME,
+     T4903.POLICY_HOLDER_TYPE,
+     T5024.EFFECTIVE_START_DATE,
+     T5024.POLICY_EXPIRY_DATE ,
+     T5024.SUM_INSURED,
+     case  when T4903.AGENT_PARTY_ID is null then case  when T4903.BROKER_ID
+   is null then T46333.PARTY_CODE else T4875.BROKER_CODE end  else
+   T4943.PARTY_CODE end,case T4345.LOB_ID when 11 then '11 Fire' when 21 then '21 Marine Cargo'
+   when 22 then '22 Marine Hull' when 31 then '31 Motor' when 34 then '34
+   Health Insurance' when 42 then '42 PA' when 43 then '43 Aviation' when 44
+   then '44 Engineering' when 45 then '45 Credit Insurance' when 46 then '46
+   Traditional Business - Miscellaneous' when 47 then '47 Rural Insurance -
+   Miscellaneous' when 48 then '48 Misc - Non Traditional Business' when 50
+   then '50 Credit Shield Insurance' end,substr(T46549.atn_voucher_number ,1,6),
+   concat(T4107.POLICY_NUMBER, ':'),case  when T4903.DEV_OFFICER_NAME is null then case  when
+ T46333.BANK_NAME is null then T4943.AGENT_NAME else T46333.BANK_NAME end
+ else T4903.DEV_OFFICER_NAME end  -->
+
+    </select>   
+    
+    
+      
+</sqlMap>

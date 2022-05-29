@@ -1,0 +1,18 @@
+2016-10-24 14:29:21 DEBUG Filecopyciti:36 - Utility started at :: 14:29:20
+2016-10-24 14:29:23 INFO  ResourceManager:168 - Entry : decryptFiles method
+2016-10-24 14:29:23 INFO  SftpUtility:23 - Entry : decryptFiles method
+2016-10-24 14:29:23 ERROR SftpUtility:40 - IOException ExceptionCannot run program "/NIAFTP/Application/SMIMETool/run/decryptandverify.sh": CreateProcess error=2, The system cannot find the file specified
+java.io.IOException: Cannot run program "/NIAFTP/Application/SMIMETool/run/decryptandverify.sh": CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at java.lang.Runtime.exec(Unknown Source)
+	at com.nia.helper.UnixCommUtility.decryptFiles(UnixCommUtility.java:30)
+	at com.nia.helper.ResourceManager.decryptFiles(ResourceManager.java:173)
+	at com.nia.main.Filecopyciti.decryptFiles(Filecopyciti.java:60)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:97)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+	... 8 more

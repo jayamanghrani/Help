@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:config xmlns:tns="http://www.example.org/config_schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/config_schema config_schema.xsd ">
+    <tns:email_prop>
+    <tns:sender_email_adddress>of.support@newindia.co.in</tns:sender_email_adddress>
+    <tns:mail_from>of.support@newindia.co.in</tns:mail_from>
+    <tns:password>Oracle@123</tns:password>
+    <tns:Receipent_list>sftp.support@newindia.co.in</tns:Receipent_list>
+    <tns:message_subject>SFTP exception occured</tns:message_subject>
+    <tns:smtp_host>mailhost.newindia.co.in</tns:smtp_host>
+    <tns:smtp_port>25</tns:smtp_port>
+    <tns:smtp_auth>true</tns:smtp_auth>
+    <tns:debug>false</tns:debug>
+    <tns:smtp_ssl_enable>false</tns:smtp_ssl_enable>
+    <tns:message_body></tns:message_body>
+    <tns:message_signature> CWISS-Oracle Finance Support Team
+    IP :100067, Landline : 022-22708311
+    Email: of.support@newindia.co.in</tns:message_signature>
+  </tns:email_prop>
+   <tns:db_prop>
+    <tns:driver>oracle.jdbc.driver.OracleDriver</tns:driver>
+    <tns:server_ip>10.121.13.11</tns:server_ip>
+    <tns:port>1523</tns:port>
+    <tns:schema_name>FINUAT</tns:schema_name>
+    <tns:username>SFTP_APPS</tns:username>
+    <tns:password>Sftp#1234</tns:password>
+  </tns:db_prop>
+  
+ <!--  
+ <tns:f_splitProperty>
+      <tns:f_limits>200</tns:f_limits>
+      <tns:f_Processd>/ofsftp/Data/Processd</tns:f_Processd>
+      <tns:f_tempfolder>/ofsftp/Data/temp</tns:f_tempfolder>
+      <tns:f_MerchantCode>NIA</tns:f_MerchantCode>
+      <tns:f_newExtension>PAY</tns:f_newExtension>
+  </tns:f_splitProperty>
+   -->
+  <tns:fcopy_prop>
+    <tns:fcopy_source>
+      <tns:s_path></tns:s_path>
+      <tns:s_fname></tns:s_fname>
+      <tns:del_source_file>false</tns:del_source_file>
+      <tns:retry_attempts>6</tns:retry_attempts>
+      <tns:f_limits>200</tns:f_limits>
+      <tns:f_newExtension>PAY</tns:f_newExtension>
+      <tns:f_KeyStoreFile>/ofsftp/Application/RPP_SFTP/Cert/NIA_PROD_CERTI.pfx</tns:f_KeyStoreFile>
+      <tns:f_keyStorePwd>123</tns:f_keyStorePwd>
+      <tns:f_bank>PNB</tns:f_bank>
+      <tns:f_merchantcode>TESTRPP</tns:f_merchantcode>
+      <tns:f_remitterAccountNumber>12345674788</tns:f_remitterAccountNumber>
+    </tns:fcopy_source>
+    <tns:fcopy_target>
+      <tns:t_path>/PNBSFTP/outbound_A/</tns:t_path>
+      <tns:t_backup_path>/PNBSFTP/Backup/outbound_A_backup</tns:t_backup_path>
+      <tns:t_fname>null</tns:t_fname>
+      <tns:t_ip>10.121.133.61</tns:t_ip>
+      <tns:t_port>22</tns:t_port>
+      <tns:t_username>pnbsftp</tns:t_username>
+      <tns:t_password>New@1234</tns:t_password>
+     <!--  <tns:t_filenamePrefix>Bhamashah_Claim_Payment_NEFT to_Bank_</tns:t_filenamePrefix> -->
+      <tns:t_SH_file_path>/PNBSFTP/TestRPP/RPPService.sh</tns:t_SH_file_path>     
+    </tns:fcopy_target>
+  </tns:fcopy_prop>
+</tns:config>

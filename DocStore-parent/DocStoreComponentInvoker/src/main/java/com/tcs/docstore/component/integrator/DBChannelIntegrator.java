@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package com.tcs.docstore.component.integrator;
+
+import com.tcs.docstore.exception.cmo.IntegrationTechnicalException;
+import com.tcs.docstore.vo.cmo.DocStoreRequestObject;
+import com.tcs.docstore.vo.cmo.DocStoreResponseObject;
+
+
+/**
+ * @author 738566
+ *
+ */
+/**
+ * The Class DBChannelIntegrator.
+ */
+public class DBChannelIntegrator extends ChannelIntegrator {
+
+	
+	/* (non-Javadoc)
+	 * @see com.tcs.bancsins.integration.component.integrator.ChannelIntegrator#execute(com.tcs.bancsins.integration.vo.cmo.BaNCSIntegrationRequestObject)
+	 */
+	@Override
+	public DocStoreResponseObject execute(DocStoreRequestObject requestVO) throws IntegrationTechnicalException {
+		return super.dBInvoker(requestVO);
+	}
+
+}

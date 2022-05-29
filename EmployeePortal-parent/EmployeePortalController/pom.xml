@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.tcs.employeeportal</groupId>
+    <artifactId>EmployeePortal-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>EmployeePortalController</artifactId>
+  
+  <dependencies>
+		<dependency>
+			<groupId>com.tcs.employeeportal</groupId>
+			<artifactId>EmployeePortalComponentInvoker</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tcs.employeeportal</groupId>
+			<artifactId>EmployeePortalTransformation</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<!--Added by Kalpana-->
+	<!-- <dependency>
+			<groupId>com.tcs.employeeportal</groupId>
+			<artifactId>EmployeePortalUtil</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tcs.employeeportal</groupId>
+			<artifactId>EmployeePortalServiceObjects</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tcs.employeeportal</groupId>
+			<artifactId>EmployeePortalCommons</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency> -->
+		<dependency>
+			<groupId>com.tcs.employeeportal</groupId>
+			<artifactId>EmployeePortalASBO</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+</project>

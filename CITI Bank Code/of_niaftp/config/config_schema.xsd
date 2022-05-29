@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/config_schema" xmlns:tns="http://www.example.org/config_schema" elementFormDefault="qualified">
+
+    <complexType name="db_property">
+    	<sequence>
+    		<element name="driver" type="string"></element>
+    		<element name="server_ip" type="string"></element>
+    		<element name="port" type="int"></element>
+    		<element name="schema_name" type="string"></element>
+    		<element name="username" type="string"></element>
+    		<element name="password" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="filecopy_property">
+    	<sequence>
+    		<element name="fcopy_source" type="tns:fcopy_source_prop"
+    			maxOccurs="1" minOccurs="1">
+    		</element>
+    		<element name="fcopy_target" type="tns:fcopy_target_prop"
+    			maxOccurs="1" minOccurs="1">
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="fcopy_source_prop">
+    	<sequence>
+    		<element name="s_path" type="string"></element>
+    		<element name="s_fname" type="string"></element>
+    		<element name="del_source_file" type="boolean"></element>
+    		<element name="retry_attempts" type="int"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="fcopy_target_prop">
+    	<sequence>
+    		<element name="t_path" type="string"></element>
+    		<element name="t_fname" type="string"></element>
+    		<element name="t_ip" type="string"></element>
+    		<element name="t_port" type="int"></element>
+    		<element name="t_username" type="string"></element>
+    		<element name="t_password" type="string"></element>
+    		<element name="t_filenamePrefix" type="string"></element>
+    	</sequence>
+    </complexType>
+	 <complexType name="email_prop">
+    	<sequence>
+    		<element name="sender_email_adddress" type="string"></element>
+    		<element name="mail_from" type="string"></element>
+    		<element name="password" type="string"></element>
+    		<element name="Receipent_list" type="string"></element>
+    		<element name="message_subject" type="string"></element>
+    		<element name="smtp_host" type="string"></element>
+    		<element name="smtp_port" type="int"></element>
+    		<element name="smtp_auth" type="boolean"></element>
+    		<element name="debug" type="boolean"></element>
+    		<element name="smtp_ssl_enable" type="boolean"></element>
+    		<element name="message_body" type="string"></element>
+    		<element name="message_signature" type="string"></element>
+    	</sequence>
+	 </complexType>
+    <element name="config" type="tns:config"></element>
+    
+    <complexType name="config">
+    	<sequence>
+    		<element name="email_prop" type="tns:email_prop" maxOccurs="1" minOccurs="1"></element>
+    		<element name="db_prop" type="tns:db_property" maxOccurs="1" minOccurs="1"></element>
+    		<element name="fcopy_prop" type="tns:filecopy_property" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+</schema>

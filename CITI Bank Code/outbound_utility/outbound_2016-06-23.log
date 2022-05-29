@@ -1,0 +1,85 @@
+2016-06-23 15:38:15 DEBUG FilecopySftp:34 - Utility started at :: 15:38:13
+2016-06-23 15:38:17 ERROR SftpUtility:39 -  IOException Exception: Cannot run program "/NIAFTP/Application/SMIMETool/run/signandencrypt.sh": CreateProcess error=2, The system cannot find the file specified
+java.io.IOException: Cannot run program "/NIAFTP/Application/SMIMETool/run/signandencrypt.sh": CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at java.lang.Runtime.exec(Runtime.java:617)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at com.nia.helper.UnixCommUtility.encryptFiles(UnixCommUtility.java:29)
+	at com.nia.helper.ResourceManager.encryptFiles(ResourceManager.java:242)
+	at com.nia.main.FilecopySftp.encryptFiles(FilecopySftp.java:55)
+	at com.nia.main.FilecopySftp.main(FilecopySftp.java:85)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:385)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:136)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 7 more
+2016-06-23 15:40:56 DEBUG FilecopySftp:34 - Utility started at :: 15:40:55
+2016-06-23 15:40:57 ERROR SftpUtility:39 -  IOException Exception: Cannot run program "/HPCLSFTP/Application/SMIMETool/run/signandencrypt.sh": CreateProcess error=2, The system cannot find the file specified
+java.io.IOException: Cannot run program "/HPCLSFTP/Application/SMIMETool/run/signandencrypt.sh": CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at java.lang.Runtime.exec(Runtime.java:617)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at com.nia.helper.UnixCommUtility.encryptFiles(UnixCommUtility.java:29)
+	at com.nia.helper.ResourceManager.encryptFiles(ResourceManager.java:242)
+	at com.nia.main.FilecopySftp.encryptFiles(FilecopySftp.java:55)
+	at com.nia.main.FilecopySftp.main(FilecopySftp.java:85)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:385)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:136)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 7 more
+2016-06-23 15:41:42 DEBUG FilecopySftp:34 - Utility started at :: 15:41:42
+2016-06-23 15:41:43 ERROR SftpUtility:39 -  IOException Exception: Cannot run program "/HPCLSFTP/Application/SMIMETool/run/signandencrypt.sh": CreateProcess error=2, The system cannot find the file specified
+java.io.IOException: Cannot run program "/HPCLSFTP/Application/SMIMETool/run/signandencrypt.sh": CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at java.lang.Runtime.exec(Runtime.java:617)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at com.nia.helper.UnixCommUtility.encryptFiles(UnixCommUtility.java:29)
+	at com.nia.helper.ResourceManager.encryptFiles(ResourceManager.java:242)
+	at com.nia.main.FilecopySftp.encryptFiles(FilecopySftp.java:55)
+	at com.nia.main.FilecopySftp.main(FilecopySftp.java:85)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:385)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:136)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 7 more
+2016-06-23 15:42:17 DEBUG FilecopySftp:34 - Utility started at :: 15:42:17
+2016-06-23 15:42:18 ERROR SftpUtility:39 -  IOException Exception: Cannot run program "/HPCLSFTP/Application/SMIMETool/run/signandencrypt.sh": CreateProcess error=2, The system cannot find the file specified
+java.io.IOException: Cannot run program "/HPCLSFTP/Application/SMIMETool/run/signandencrypt.sh": CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at java.lang.Runtime.exec(Runtime.java:617)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at com.nia.helper.UnixCommUtility.encryptFiles(UnixCommUtility.java:29)
+	at com.nia.helper.ResourceManager.encryptFiles(ResourceManager.java:242)
+	at com.nia.main.FilecopySftp.encryptFiles(FilecopySftp.java:55)
+	at com.nia.main.FilecopySftp.main(FilecopySftp.java:85)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:385)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:136)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 7 more
+2016-06-23 15:43:24 DEBUG FilecopySftp:34 - Utility started at :: 15:43:23
+2016-06-23 15:43:25 ERROR SftpUtility:39 -  IOException Exception: Cannot run program "/HPCLSFTP/Application/SMIMETool/run/signandencrypt.sh": CreateProcess error=2, The system cannot find the file specified
+java.io.IOException: Cannot run program "/HPCLSFTP/Application/SMIMETool/run/signandencrypt.sh": CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+	at java.lang.Runtime.exec(Runtime.java:617)
+	at java.lang.Runtime.exec(Runtime.java:450)
+	at java.lang.Runtime.exec(Runtime.java:347)
+	at com.nia.helper.UnixCommUtility.encryptFiles(UnixCommUtility.java:29)
+	at com.nia.helper.ResourceManager.encryptFiles(ResourceManager.java:242)
+	at com.nia.main.FilecopySftp.encryptFiles(FilecopySftp.java:55)
+	at com.nia.main.FilecopySftp.main(FilecopySftp.java:85)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:385)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:136)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+	... 7 more

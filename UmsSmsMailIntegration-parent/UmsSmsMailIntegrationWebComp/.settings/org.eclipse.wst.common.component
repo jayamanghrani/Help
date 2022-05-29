@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="UmsSmsMailIntegrationWebComp">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="UmsSmsMailIntegrationController-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/UmsSmsMailIntegrationController/UmsSmsMailIntegrationController">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="UmsSmsMailIntegrationSO-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/UmsSmsMailIntegrationSO/UmsSmsMailIntegrationSO">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="UmsSmsMailIntegrationAccessManager-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/UmsSmsMailIntegrationAccessManager/UmsSmsMailIntegrationAccessManager">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="UmsSmsMailIntegrationCommon-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/UmsSmsMailIntegrationCommon/UmsSmsMailIntegrationCommon">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="UmsSmsMailIntegrationWebComp"/>
+        <property name="java-output-path" value="/UmsSmsMailIntegrationWebComp/target/classes"/>
+    </wb-module>
+</project-modules>

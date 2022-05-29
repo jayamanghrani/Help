@@ -1,0 +1,1479 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html  lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1"/>
+		<title> Home : The New India Assurance Co. Ltd.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		
+		<!---------------------------------------------------------SCRIPT FILES--------------------------------------------------->
+		<script type="text/javascript" src="assets/private/js/jquery-1.11.3.min.js" ></script>
+		<script type="text/javascript" src="assets/private/js/jquery-ui.min.js" ></script>
+		<script type="text/javascript" src="assets/private/js/jquery-simple-pagination-plugin.js"></script>
+		<script type="text/javascript" src="assets/private/js/jquery-migrate-1.2.1.min.js" ></script>
+		<script type="text/javascript" src="assets/private/js/config.js"></script>
+		<script type="text/javascript" src="assets/private/js/moment.js"></script>
+		<script type="text/javascript" src="assets/private/js/portal.js"></script>
+		<script type="text/javascript" src="assets/private/js/si.files.js"></script>
+		<!---------------------------------------------------------SCRIPT FILES--------------------------------------------------->
+		<!---------------------------------------------------------STYLE FILES---------------------------------------------------->	
+		<link rel="stylesheet" type="text/css" href="assets/private/css/jquery-ui.css" >
+		<link rel="stylesheet" type="text/css" href="assets/private/css/carousel.css" >
+		<link rel="stylesheet" type="text/css" href="assets/private/css/emp2.css" >
+		<link rel="stylesheet" type="text/css" href="assets/private/css/chn.css" >
+		<!---------------------------------------------------------STYLE FILES---------------------------------------------------->		
+		<script>
+			
+			$(document).ready(function() {
+				 $('#searchview').hide();
+				 /****Code added for old documents****/
+				 $('#searchview_old').hide();
+				 $('#searchviewNull_old').hide();
+				 /****Code added for old documents****/
+				 
+				 /****Code added for recent documents starts****/
+				  $("#searchview_recent").hide();
+				 $("#searchviewNull_recent").hide();
+				 /****Code added for recent documents ends****/
+				 
+				 SI.Files.stylizeAll();
+				 
+			    $(".tabs-menu a").click(function(event) {
+			    
+			        event.preventDefault();
+			        $(this).parent().addClass("current");
+			        $(this).parent().siblings().removeClass("current");
+			        var tab = $(this).attr("href");
+			        $(".tab-content").not(tab).css("display", "none");
+			        $(tab).fadeIn();
+			        
+			        var n=$("#tab-2").css("display");
+			        if(n=="block"){
+			        	$(".cpyrght").css("margin-top","120px");
+			        }
+			        else{
+			        	$(".cpyrght").css("margin-top","0px");
+			        }
+			    });
+			    
+			   
+			    
+			        
+			    
+			});
+		</script>
+		<script>
+	
+			$(function () {
+				  /****Code added for old docs****/
+			     $(function () {
+			            $('#docuploaddatefrom_old').datepicker({
+			            	dateFormat: 'dd/mm/yy',
+			            	changeMonth:true,
+			            	changeDate:true,
+			            	changeYear:true,
+			            	maxDate: new Date(2016, 12 - 1, 16),
+			            	onSelect: function() { showHide_input_msg('docuploaddatefrom_old');
+			            	  
+			            	  }
+			            });
+			        });
+			        $(function () {
+			            $('#docuploaddateto_old').datepicker({
+			            	dateFormat: 'dd/mm/yy',
+			            	changeMonth:true,
+			            	changeDate:true,
+			            	maxDate:  new Date(2016, 12 - 1, 16),
+			            	changeYear:true,
+			            	onSelect: function() { showHide_input_msg('docuploaddateto_old'); 
+			            	}
+			            });
+			        });
+
+			        /****Code added for old docs****/
+			        
+			            $('#docpublishdate').datepicker({
+			            	dateFormat: 'dd/mm/yy',
+			            	changeMonth:true,
+			            	changeDate:true,
+			            	changeYear:true,
+			            	maxDate: new Date(),
+			            	onSelect: function() { showHide_input_msg('docpublishdate') }
+			            });
+			        });
+			        
+			        $(function () {
+			            $('#docuploaddatefrom').datepicker({
+			            	dateFormat: 'dd/mm/yy',
+			            	changeMonth:true,
+			            	changeDate:true,
+			            	changeYear:true,
+			            	minDate: new Date(2016, 12 - 1, 17),
+			            	maxDate: new Date(),
+			            	onSelect: function() { showHide_input_msg('docuploaddatefrom'); 
+			            	//dateDiff_indays("docuploaddatefrom", "docuploaddateto", '365','searchForm_DateLimt_Error');
+			            	}
+			            });
+			        });
+			        $(function () {
+			            $('#docuploaddateto').datepicker({
+			            	dateFormat: 'dd/mm/yy',
+			            	changeMonth:true,
+			            	changeDate:true,
+			            	maxDate: new Date(),
+			            	changeYear:true,
+			            	minDate: new Date(2016, 12 - 1, 17),
+			            	onSelect: function() { showHide_input_msg('docuploaddateto'); 
+			            	//dateDiff_indays("docuploaddatefrom", "docuploaddateto", '365','searchForm_DateLimt_Error');
+			            	}
+			            });
+			        });
+			        $(function () {
+			            $('#docpublishdatefrom').datepicker({
+			            	dateFormat: 'dd/mm/yy',
+			            	changeMonth:true,
+			            	changeDate:true,
+			            	changeYear:true,
+			            	minDate: new Date(2016, 12 - 1, 17),
+			            	maxDate: new Date(),
+			            	setDate:new Date(),
+			            	onSelect: function() { showHide_input_msg('docpublishdatefrom');}
+			            });
+			        });
+			        $(function () {
+			            $('#docpublishdateto').datepicker({
+			            	dateFormat: 'dd/mm/yy',
+			            	changeMonth:true,
+			            	changeDate:true,
+			            	minDate: new Date(2016, 12 - 1, 17),
+			            	maxDate: new Date(),
+			            	changeYear:true,
+			            	setDate:new Date(),
+			            	onSelect: function() { showHide_input_msg('docpublishdateto'); }
+			            });
+			        });
+			        
+			        function reloadURL()
+			        {
+			                var currentUrl =location.href;
+			        		newurl=currentUrl.split("?")[0];
+			            	location.href=newurl;
+			        }
+			        function docUploadResponse(){
+			        	
+			        var temp_flag=getURLParams_GET();
+			        if(temp_flag[0].split(",")[0].split("=")[1] == "success"){
+			        	
+			        	alert("Your document has been uploaded successfully. You can view the document after 10 minutes.");
+			        	reloadURL();
+			        	
+			        }
+			        else if(temp_flag[0].split(",")[0].split("=")[1] == "failure"){
+			        	
+			        	alert("Document Upload Failure : Either the document already exists or there is some issue.Please try again..!");
+			        	
+			        	reloadURL();
+			        }
+			        else if(temp_flag[0].split(",")[0].split("=")[1] == "unAuthorised"){
+			        	
+			        	alert("Sorry,you are not authorized to upload document in the selected department.");
+			        	reloadURL();
+			        }
+			       
+			else if (temp_flag[0].split(",")[0].split("=")[0]=="error") {
+					var text=decodeURIComponent(temp_flag[0].split(",")[0].split("=")[1]);
+				 alert(text);
+
+					reloadURL();
+				}
+			}
+		</script>
+		<script type = "text/javascript" >
+function resizeText(multiplier) {
+  if (document.body.style.fontSize == "") {
+    document.body.style.fontSize = "1.0em";
+ 
+  }
+ 
+    //var n=$("body").css("font-size");
+   // alert(n);
+     var x=document.body.style.fontSize;
+
+if(parseFloat(document.body.style.fontSize)<=0.8){
+	
+	document.getElementById("myBtn").style.pointerEvents="none";
+		document.getElementById("myBtn").style.color="grey";
+	
+}
+
+ else if(parseFloat(document.body.style.fontSize)>=1.2){
+ 	document.getElementById("myBtn1").style.pointerEvents="none";
+		document.getElementById("myBtn1").style.color="grey";
+ 	
+ }
+ 
+ 	document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+ 	if(parseFloat(document.body.style.fontSize)>=0.8){
+ 		document.getElementById("myBtn").style.pointerEvents="auto";
+		document.getElementById("myBtn").style.color="#428bca";
+ 	}
+ 	if(parseFloat(document.body.style.fontSize)<=1.2){
+ 		document.getElementById("myBtn1").style.pointerEvents="auto";
+		document.getElementById("myBtn1").style.color="#428bca";
+ 	}
+ 
+}
+
+ function confidentialFunction(e){
+	if(document.getElementById('uploaddepartmentnameVisibleTo').value.length==0){
+		document.getElementById('confidentialNo').checked = true;
+		document.getElementById('confidentialYes').disabled = false;
+		document.getElementById('confidentialNo').disabled = false;
+		document.getElementById('confidentialDisable').disabled = false; confidentialYes
+	}
+	if(document.getElementById('uploaddepartmentnameVisibleTo').value=='All'){
+		document.getElementById('confidentialNo').checked = true;
+		document.getElementById('confidentialNo').value = 'No';
+		document.getElementById('confidentialYes').disabled = true;
+		document.getElementById('confidentialNo').disabled = true;
+	}
+	else{
+		document.getElementById('confidentialNo').checked = true;
+		document.getElementById('confidentialYes').disabled = false;
+		document.getElementById('confidentialNo').disabled = false;
+	}
+} 
+
+
+</script>
+		<style type="text/css">
+	
+			.simple-pagination-page-numbers a
+			{
+			display: block;
+			float: left;
+			width: 2rem;
+			text-align: center;
+			}
+			a[class^="simple-pagination-navigation-"] + a[class^="simple-pagination-navigation-"]
+			{
+			margin-right: 0;
+			}
+			a[class*="simple-pagination-navigation-disabled"]
+			{
+			color: black;
+			cursor: default;
+			}
+			body > div,
+			header
+			{
+			width: 50%;
+			margin: 0 auto;
+			padding: 2rem;
+			}
+			body > div + header
+			{
+			margin-top: 6rem;
+			}
+			body > div
+			{
+			border-radius: 0 0 .5rem .5rem;
+			background-color: white;
+			}
+			body > div > div,
+			div > div + table
+			{
+			margin-top: 1rem;
+			}
+			.my-navigation:after
+			{
+			content: "";
+			display: table;
+			clear: both;
+			}
+			.my-navigation div
+			{
+			float: left;
+			}
+			.my-navigation div + div
+			{
+			margin-left: .5rem;
+			}
+		</style>
+<script type="text/javascript">
+    
+    function oneRefresh() {
+	if(!window.location.hash) {
+       window.location = window.location + '#loaded';
+      // window.location.reload();
+	reloadURL();
+     }
+
+	}
+    
+    function closeMe()
+    {
+    //  var win = window.open(“”,”_self”); /* url = “” or “about:blank”; target=”_self”
+	 window.top.opener = null; window.close(); 
+    }
+    
+
+</script>
+		<!-- <script src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
+	</head>
+	<body onload="oneRefresh();" >
+		<!--we can use single controller for the whole page  or we can use individual controller for each sub container as show in the structure-->
+		<div class="empcontainer " style="padding-top:0">
+			<!--header section starts below -->
+			<div class="row clearfix style_logout">
+				<!--we use the ng-model for the bidding of data from controller to view-->
+				<div class="width5 column headermbl">
+					<div class="page-header">
+						<img class="img-logo" src="assets/private/img/logo.png">
+					</div>
+				</div>
+				<!--top breadcrumbs starts below-->
+				<div class="width7 brdcrumbmbl pull-right ">
+					<ul class="breadcrumb text-right">
+						<li>
+							<span class="callus"></span>
+							<span class="mr-10 blue_bca">Toll Free 1800-209-1415</span>
+						</li>
+						<li class="divider">
+							|
+						</li>
+						<li>
+							<a id="myBtn" onclick="resizeText(-1)">A<sup>--</sup></a>
+						</li>
+						<li class="divider">
+							|
+						</li>
+						<li>
+							<a id="myBtn1" onclick="resizeText(+1)">A<sup>++</sup></a>
+						</li>
+						<li class="divider">
+							|
+						</li>
+						<li class="pull-right">
+						<span class="mr-10 " id="dateheader" ></span>
+				</li>
+					</ul>
+					
+					
+				<div class="logout pull-right employeehelp text-white " >
+				
+				<a id="logout" style="color: white;" name="logout" onclick="closeMe()" >Logout</a>
+					
+					</div>
+					
+				</div>
+				<!--top breadcrumbs ends above-->
+			</div>
+			<!--main nav starts below-->
+			<div class="row clearfix navmainbar ">
+				<div class="navbar">
+					<div class="navbar">
+						<div class="" role="navigation">
+							<div class="">
+								<a class="nd" href="#"></a>
+							</div>
+							<div class="width8">
+								<div class="collapse navbar-collapse navsidehdr" id="bs-example-navbar-collapse-1">
+									<ul class=" menunav">
+										<li >
+										<!-- 	<a href="http://cwiss.newindia.co.in/EmployeePortalNIA">Home</a> -->
+										<font color=white>Document Store </font>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<ul class="searchbox width4 lgnprf_cnt" ng-controller="PopoverDemoCtrl">
+								<li>
+									<div class="text-white popover">
+										<a  class="margin-l-10" onclick="toggle_visibility('lgnprf')"><span  id="signedUser"  ></span>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--main nav ends above-->
+			<!--header section ends above -->
+		
+			<div class="clearfix">
+				<div id="tabs-container">
+					<ul class="tabs-menu">
+					   <li class=" current visiblilityUpload" ><a href="#tab-1" onclick="return resetUploadForm()">Document Upload </a></li>
+					  <li class=" visiblilitySearch"><a href="#tab-2" id="searchclick" onclick="return resetSearchForm()">Document Search</a></li>
+					  <li class=" visiblilitySearch"><a href="#tab-3" id="searchclick_old" onclick="return resetOldSearchForm()">Old Document Search (Documents uploaded before 16 Dec 2016)</a></li>
+					  <li class=" visiblilitySearch"><a href="#tab-4" id="searchclick_recent" onclick="return showRecentdocuments()">Recent Documents</a></li>	
+						
+					</ul>
+					<div class="tab clearfix">
+						
+						<div id="tab-2" class="tab-content visiblilitySearch" style="display:none">
+							<div id="" class="clearfix">
+								<form name="docSearchForm" id="docSearchForm" method="post" >
+									<div class="clearfix">
+										<h4>Search Criteria</h4>
+										<div class="tabsec clearfix">
+											<div class="gap clearfix">
+												<label class="" id="method" >Please choose one method</label>
+												<div class=" padding-none inline-block">
+													
+													<input type="radio"  checked="checked" value="ALL" id="matchall" name="method">
+													Match all of the following
+												</div>
+												<div class=" padding-none  inline-block">
+													
+													<input type="radio" value="OTHERS" id="matchothers" name="method">
+													Match any of the following
+												</div>
+											</div>
+											<hr>
+											<div class="clearfix mb-10">
+												<div class="width6">
+	 											<div class="form-group key">
+														<label class="width6">File Name </label>
+														<input class="form-control width4" type="text" id="searchfilename" name="searchfilename"/>
+														<span id="searchForm_file_Error" class="error" style="display:none"></span>
+													
+													</div>
+												</div>
+											</div>
+											<div class="clearfix mb-10">
+												<div class="width6">
+													<div class="form-group">
+														<label class="width6">Department Name <font color= "red">*</font></label>
+														<select id="searchdepartmentname" name="searchdepartmentname" class="form-control width5" >	
+															<OPTION VALUE="">Select</OPTION>
+															<OPTION VALUE="All">ALL</OPTION>
+														</select>
+													</div>
+												</div>
+												<div class="width6">
+													<div class="form-group">
+														<label class="width6">Document Type </label>
+														<select  id="searchdocumenttype" name="searchdocumenttype" class="form-control width5">
+															<OPTION VALUE="">Select</OPTION>
+															<OPTION VALUE="Announcements">Announcements</OPTION>
+															<OPTION VALUE="Approval">Approval</OPTION>
+															<OPTION VALUE="CR">CR</OPTION>
+															<OPTION VALUE="Circular">Circular</OPTION>
+															<OPTION VALUE="Gap Documents">Gap Documents</OPTION>
+															<OPTION VALUE="Magazines">Magazines</OPTION>
+															<OPTION VALUE="Manual">Manual</OPTION>
+															<OPTION VALUE="New Energy bulletins">New Energy bulletins</OPTION>
+															<OPTION VALUE="Rules/Guideline">Rules/Guideline</OPTION>
+															<OPTION VALUE="IRDA Communications">IRDA Communications</OPTION>
+															<OPTION VALUE="Exposure Drafts">Exposure Drafts</OPTION>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="clearfix mb-10">
+												<div class="width6">
+													<div class="form-group">
+														<label class="width6">Issued By </label>
+														<select id="issuedBy" name="issuedBy" class="form-control width5">
+															<OPTION VALUE="">Select</OPTION>
+															<OPTION VALUE="Audit">Audit</OPTION>
+															<OPTION VALUE="CVC">CVC</OPTION>
+															<OPTION VALUE="CVO">CVO</OPTION>
+															<OPTION VALUE="FA">FA</OPTION>
+															<OPTION VALUE="GIC">GIC</OPTION>
+															<OPTION VALUE="IRDA">IRDA</OPTION>
+															<OPTION VALUE="Ministry">Ministry</OPTION>
+															<OPTION VALUE="NIA HO">NIA HO</OPTION>
+															<OPTION VALUE="TAC">TAC</OPTION>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class=" clearfix mb-10" style="display: none;">
+												<div class="width10 form-group">
+													<label class="width3">Search By </label>
+													<div class=" padding-none inline-block">
+														
+														<input type="radio" name="search" id="udr" value="UDR" checked="checked">
+														Upload Date Range
+													</div>
+													<div class=" padding-none  inline-block">
+														
+														<input type="radio" name="search" id="pdr" value="PDR"   >
+														Published Date Range
+													</div>
+												</div>
+											</div>
+											<div class="clearfix mb-10" id="docUploadDate" name="docUploadDate">
+												<div class="width6">
+													<div class="form-group key date_box">
+														<label class="width6">Document Upload </br> Date From  <font color= "red">*</font></label>
+														<input class="txtDat form-control width4" style="cursor: pointer;" id="docuploaddatefrom" name="docuploaddatefrom" readonly/>
+													</div>
+												</div>
+												<div class="width6" >
+													<div class="form-group key date_box">
+														<label class="width6">Document Upload Date To  <font color= "red">*</font></label>
+														<input class="txtDat form-control width4" style="cursor: pointer;" id="docuploaddateto" name="docuploaddateto" readonly/>
+													</div>
+												</div>
+											</div>
+											<div class="clearfix mb-10" id="docPublishDate" name="docPublishDate"   style="display: none;">
+												<div class="width6">
+													<div class="form-group key date_box">
+														<label class="width6">Document Published Date From  <font color= "red">*</font></label>
+														<input class="txtDat form-control width4" style="cursor: pointer;" id="docpublishdatefrom" name="docpublishdatefrom" readonly/>
+													</div>
+												</div>
+												<div class="width6">
+													<div class="form-group key date_box">
+														<label class="width6">Document Published </br> Date To  <font color= "red">*</font></label>
+														<input class="txtDat form-control width4" style="cursor: pointer;" id="docpublishdateto" name="docpublishdateto" readonly/>
+													</div>
+												</div>
+											</div>
+											<span id="searchForm_DateLimt_Error" class="error" style="display:none"></span>
+											<div class="clearfix mb-10">
+												<div class="width6 pull-right">
+													<div class="clearfix text-right  mb-10 ">
+													<!-- 	<a href="javascript:document.getElementById('docSearchForm').reset();" class="underline mr-10" onclick="resetForms();">Reset</a> -->
+														<input type="button" class="btn btn-blue btn-widths" name="searchSubmit" id="searchSubmit" value="Search" />
+														<button type="button" class="btn btn-blue btn-widths"  onclick="return resetSearchForm()"  >Reset</button> 
+														
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										<font color= "red">* Indicates Mandatory Fields</font>
+									</div>
+								</form>
+							</div>
+							<div id="loading_ajax" style="display:none" align="center">
+							  <img src="assets/private/images/NIA_gif2.gif" />
+							</div>
+							<div class="clearfix" id="searchviewNull">
+							<table class="table_wrapper" id="searchtable">
+									  <thead class="table_style">
+									  <tr id="displayResultsNull">
+									  </tr>
+    								</thead>
+									</table>
+							</div>
+							<div class="clearfix" id="searchview">
+								<h4>Search Results</h4>
+								<div id="fourth-container">
+									<table class="table_wrapper" id="searchtable">
+									  <thead class="table_style">
+    									<tr >
+        									<th class="table_style1">
+                                                Date of Upload
+           										 </th>
+
+											            <th class="table_style1">
+										                  Date Of Publish
+											            </th>
+											            <th class="table_style1">
+										                 Department
+											            </th>
+											            <th class="table_style1">
+											              Description
+											            </th>
+											             <th class="table_style1">
+											              Document Name
+											            </th>
+											            <th class="table_style1">
+											              Actions
+											            </th>
+											           
+											       </tr>
+											  </thead>
+										<tbody id="displayResults">
+                                       
+										</tbody>
+									</table>
+									<div class="my-navigation">
+										<div class="simple-pagination-first"></div>
+										<div class="simple-pagination-previous"></div>
+										<div class="simple-pagination-page-numbers"></div>
+										<div class="simple-pagination-next"></div>
+										<div class="simple-pagination-last"></div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div id="tab-3" class="tab-content visiblilitySearch" style="display:none">
+							<div id="" class="clearfix">
+								<form name="docSearchForm_old" id="docSearchForm_old" method="post" autocomplete="off">
+									<div class="clearfix">
+										<h4>Search Criteria</h4>
+										<div class="tabsec clearfix">
+											<div class="gap clearfix">
+												<label class="" id="method" >Please choose one method</label>
+												<div class=" padding-none inline-block">
+													
+													<input type="radio"  checked="checked" value="ALL" id="matchall" name="method_old">
+													Match all of the following
+												</div>
+												<div class=" padding-none  inline-block">
+													
+													<input type="radio" value="OTHERS" id="matchothers" name="method_old">
+													Match any of the following
+												</div>
+											</div>
+											<hr>
+											<div class="clearfix mb-10">
+												<div class="width6">
+	 											<div class="form-group key">
+														<label class="width6">File Name </label>
+														<input class="form-control width4" type="text" id="searchfilename_old" name="searchfilename_old"/>
+																											
+													</div>
+												</div>
+												<div class="width6">
+	 											<div class="form-group key">
+														<label class="width6">Keyword </label>
+														<input class="form-control width4" type="text" id="description_old" name="description_old" maxlength="30" />
+																											
+													</div>
+												</div>
+											</div>
+											<div class="clearfix mb-10">
+												<div class="width6">
+													<div class="form-group">
+														<label class="width6">Department Name <font color= "red">*</font> </label>
+														<select id="searchdepartmentname_old" name="searchdepartmentname_old" class="form-control width5">	
+															<OPTION VALUE="">Select</OPTION>
+														</select>
+														<span id="searchForm_file_Error_old" class="error" style="display:none"></span>
+													</div>
+												</div>
+												<div class="width6">
+													<div class="form-group">
+														<label class="width6">Issued By </label>
+														<select id="issuedBy_old" name="issuedBy_old" class="form-control width5">
+															<OPTION VALUE="">Select</OPTION>
+															<OPTION VALUE="Audit">Audit</OPTION>
+															<OPTION VALUE="CVC">CVC</OPTION>
+															<OPTION VALUE="CVO">CVO</OPTION>
+															<OPTION VALUE="FA">FA</OPTION>
+															<OPTION VALUE="GIC">GIC</OPTION>
+															<OPTION VALUE="IRDA">IRDA</OPTION>
+															<OPTION VALUE="Ministry">Ministry</OPTION>
+															<OPTION VALUE="NIA HO">NIA HO</OPTION>
+															<OPTION VALUE="TAC">TAC</OPTION>
+														</select>
+													</div>
+												</div>
+											</div>
+					
+											<div class="clearfix mb-10" id="docUploadDate_old" name="docUploadDate_old">
+												<div class="width6">
+													<div class="form-group key date_box">
+														<label class="width6">Document Upload </br> Date From </label>
+														<input class="txtDat form-control width4" style="cursor: pointer;" id="docuploaddatefrom_old" name="docuploaddatefrom_old" readonly/>
+													</div>
+												</div>
+												<div class="width6" >
+													<div class="form-group key date_box">
+														<label class="width6">Document Upload Date To </label>
+														<input class="txtDat form-control width4" style="cursor: pointer;" id="docuploaddateto_old" name="docuploaddateto_old" readonly/>
+													</div>
+												</div>
+											</div>
+																			
+											<span id="searchForm_DateLimt_Error_old" class="error" style="display:none"></span>
+											<div class="clearfix mb-10">
+											<div class="width6">
+													<p align="right" style="color:red" id="errorMsg"></p>
+												</div>
+												<div class="width6 pull-right">
+													<div class="clearfix text-right  mb-10 ">
+														<!-- <a href="javascript:document.getElementById('docSearchForm').reset();" class="underline mr-10" onclick="resetForms();">Reset</a> -->
+														<input type="button" class="btn btn-blue btn-widths" name="searchSubmit_old" id="searchSubmit_old" value="Search" />
+														<button type="button" class="btn btn-blue btn-widths" onclick="return resetOldSearchForm()">Reset</button>
+														
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										<font color= "red">* Indicates Mandatory Fields</font>
+									</div>
+								</form>
+							</div>
+							<div id="loading_ajax_old" style="display:none" align="center">
+							  <img src="assets/private/images/NIA_gif2.gif" />
+							</div>
+							<div class="clearfix" id="searchviewNull_old">
+							<table class="table_wrapper" id="searchtable">
+									  <thead class="table_style">
+									  <tr id="displayResultsNull_old">
+									  </tr>
+    								</thead>
+									</table>
+							</div>
+							<div class="clearfix" id="searchview_old">
+								<h4>Search Results</h4>
+								<div id="fourth-container_old">
+									<table class="table_wrapper" id="searchtable">
+									  <thead class="table_style">
+    									<tr >
+        									            <th class="table_style1">
+										                  Date Of Upload
+											            </th>
+											            <th class="table_style1">
+										                 Department
+											            </th>
+											            <th class="table_style1">
+											             Issued By
+											            </th>
+											             <th class="table_style1" style="width: 40%">
+											              Document Name
+											            </th>
+											            <th class="table_style1">
+											              Description
+											            </th>
+											            <th class="table_style1">
+											              Actions
+											            </th>
+											           
+											       </tr>
+											  </thead>
+										<tbody id="displayResults_old">
+                                       
+										</tbody>
+									</table>
+									<div class="my-navigation">
+										<div class="simple-pagination-first"></div>
+										<div class="simple-pagination-previous"></div>
+										<div class="simple-pagination-page-numbers"></div>
+										<div class="simple-pagination-next"></div>
+										<div class="simple-pagination-last"></div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div id="tab-1" class="tab-content visiblilityUpload">
+							<div id="" >
+								<div class="">
+									<form name="docUploadForm" id="docUploadForm" method="post" enctype="multipart/form-data">
+										<div class="tabsec clearfix">
+											<div class="clearfix mb-10 gap-top">
+												<div class="width6">
+													<div class="form-group key">
+														<label class="width6">File Name  <font color= "red">*</font></label>
+														<input class="form-control width4 mandatory" id="filename" name="filename" type="text" readonly/>
+													</div>
+												</div>
+												<!-- <button onclick="document.getElementById('cabinet').click()">browse</button>
+												<label class="cabinet" id="cabinet"> 
+											    <input type="file" class="file" name="upload" id="upload" />
+												</label> -->
+												<div class="width3">
+													<input type="file" name="upload" id="upload">
+												</div>
+											</div>
+											<div class="clearfix mb-10">
+												<div class="width6">
+													<div class="form-group">
+														<label class="width6">Department Name  <font color= "red">*</font></label>
+														<select id="uploaddepartmentname" name="uploaddepartmentname" class="form-control width5 mandatory">	
+															<OPTION VALUE="">Select</OPTION>
+														</select>
+													</div>
+												</div>
+												<div class="width6">
+													<div class="form-group">
+														<label class="width6">Document Type  <font color= "red">*</font></label>
+														<select  id="uploaddocumenttype" name ="uploaddocumenttype" class="form-control width5 mandatory">
+															<OPTION VALUE="">Select</OPTION>
+															<OPTION VALUE="Announcements">Announcements</OPTION>
+															<OPTION VALUE="Approval">Approval</OPTION>
+															<OPTION VALUE="CR">CR</OPTION>
+															<OPTION VALUE="Circular">Circular</OPTION>
+															<OPTION VALUE="Gap Documents">Gap Documents</OPTION>
+															<OPTION VALUE="Magazines">Magazines</OPTION>
+															<OPTION VALUE="Manual">Manual</OPTION>
+															<OPTION VALUE="New Energy bulletins">New Energy bulletins</OPTION>
+															<OPTION VALUE="Rules/Guideline">Rules/Guideline</OPTION>
+															<OPTION VALUE="IRDA Communications">IRDA Communications</OPTION>
+															<OPTION VALUE="Exposure Drafts">Exposure Drafts</OPTION>
+														</select>
+													</div>
+												</div>
+											</div>
+											<!--  Added for new DocUpload feature Starts-->
+													<div class="clearfix mb-10">
+												<div class="width6">
+													<div class="form-group">
+														<label class="width6">Visible to <font color= "red">*</font></label>
+														<!-- <select id="uploaddepartmentnameVisibleTo" name="uploaddepartmentnameVisibleTo" class="form-control width5 mandatory"> -->	
+															<select id="uploaddepartmentnameVisibleTo" name="uploaddepartmentnameVisibleTo" class="form-control width5 mandatory" onclick="toggleVisibility();">
+															<OPTION VALUE="">Select</OPTION>
+															<OPTION VALUE="All">All</OPTION>
+														</select>
+													</div>
+												</div>
+											</div>
+											<!--  Added for new DocUpload Feature Ends -->
+											<div class="clearfix mb-10">
+												<div class="width6 clearfix">
+													<div class="form-group">
+														<label class="width6">Description  <font color= "red">*</font></label>
+														<textarea rows="3" class="form-control width3 mandatory" id="description" name="description" maxlength="50"></textarea>
+													</div>
+												</div>
+												<div class="width6">
+													<div class="form-group key">
+														<label class="width6">Document Published Date  <font color= "red">*</font></label>
+														<input type="text" id="docpublishdate" style="cursor: pointer;" name="docpublishdate" class="txtDat form-control width4 mandatory" readonly />
+													</div>
+												</div>
+											</div>
+											<div class="clearfix mb-10">
+												<div class="width6">
+													<div class="form-group">
+														<label class="width6">Issued By  <font color= "red">*</font></label>
+														<select  id="uploadissuedby" name="uploadissuedby" class="form-control width5 mandatory">
+															<OPTION VALUE="">Select</OPTION>
+															<OPTION VALUE="Audit">Audit</OPTION>
+															<OPTION VALUE="CVC">CVC</OPTION>
+															<OPTION VALUE="CVO">CVO</OPTION>
+															<OPTION VALUE="FA">FA</OPTION>
+															<OPTION VALUE="GIC">GIC</OPTION>
+															<OPTION VALUE="IRDA">IRDA</OPTION>
+															<OPTION VALUE="Ministry">Ministry</OPTION>
+															<OPTION VALUE="NIA HO">NIA HO</OPTION>
+															<OPTION VALUE="TAC">TAC</OPTION>
+														</select>
+													</div>
+												</div>
+												<div class="width6">
+													<div class="form-group key">
+														<label class="width6">Document Upload Date  <font color= "red">*</font></label>
+														<input type="text" id="docuploaddate" style="cursor: pointer;" name="docuploaddate" class="txtDat form-control width4 mandatory " readonly />
+													</div>
+												</div>
+											</div>
+											<div class="clearfix mb-10">
+												<div class="width6" id="confidentialDisable">
+													<label class="width6" id="confidential" >Is   the    document </br> confidential ? <font color= "red">*</font></label>
+													<div class=" padding-none inline-block">
+														Yes<input type="radio" value="Yes" id="confidentialYes" name="confidential">
+													</div>
+													<div class=" padding-none  inline-block">
+														No<input type="radio"  checked="checked" value="No" id="confidentialNo" name="confidential"><br>
+													</div>
+												</div>
+												<label id="confidential-error" class="error radio_error" for="confidential" style="display:none;"></label>
+											</div>
+											<div class="clearfix mb-10">
+												<div class="width6 pull-right">
+													<div class="clearfix text-right  mb-10 ">
+														<!-- <a  href="javascript:document.getElementById('docUploadForm').reset();" class="underline mr-10">Reset</a> -->
+														<button type="button" class="btn btn-blue btn-widths" id="documentupload" name="documentupload"  >Submit</button> 
+														<button type="button" class="btn btn-blue btn-widths"  onclick="return resetUploadForm()"  >Reset</button> 
+													</div>
+													  
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<font color= "red">* Indicates Mandatory Fields</font></br>
+								<font color= "red">* File size should be less than 10 MB</font></br> 
+								<font color= "#428BCA">Only "pdf", "tiff", "tif", "xlsx", "xlx", "doc", "docx", "ppt", "pptx", "jpeg", "jpg","odt","ods","odf","odp" file types are allowed.</font>
+								
+							</div>
+						</div>
+						
+						<!-- Code added for recent documents starts-->
+						<div id="tab-4" class="tab-content visiblilitySearch" style="display:none">
+							
+							<div id="loading_ajax_recent" style="display:none" align="center">
+							  <img src="assets/private/images/NIA_gif2.gif" />
+							</div>
+							<div class="clearfix" id="searchviewNull_recent">
+							<table class="table_wrapper" id="searchtable">
+									  <thead class="table_style">
+									  <tr id="displayResultsNull_recent">
+									  </tr>
+    								</thead>
+									</table>
+							</div>
+						
+							<div class="clearfix" id="searchview_recent">
+								<h4>Search Results</h4>
+								<div id="fourth-container_recent">
+									<table class="table_wrapper" id="searchtable">
+									  <thead class="table_style">
+    									<tr >
+        									<th class="table_style1">
+                                                Date of Upload
+           										 </th>
+
+											            <th class="table_style1">
+										                  Date Of Publish
+											            </th>
+											            <th class="table_style1">
+										                 Department
+											            </th>
+											            <th class="table_style1">
+											              Description
+											            </th>
+											             <th class="table_style1">
+											              Document Name
+											            </th>
+											            <th class="table_style1">
+											              Actions
+											            </th>
+											           
+											       </tr>
+											  </thead>
+										<tbody id="displayResults_recent">
+                                       
+										</tbody>
+									</table>
+									<div class="my-navigation">
+										<div class="simple-pagination-first"></div>
+										<div class="simple-pagination-previous"></div>
+										<div class="simple-pagination-page-numbers"></div>
+										<div class="simple-pagination-next"></div>
+										<div class="simple-pagination-last"></div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<!-- Code added for recent documents ends -->
+						
+					</div>
+					
+				</div>
+			</div>
+			<div class="row clearfix cpyrght mt-10 ">
+				The New India Assurance Co.Ltd(IRDAI Regn.No-190). All Rights Reserved.|Regd.office:87,M.G.Road, Fort Mumbai 400001<br>
+				Site best viewed in IE-9 and Mozilla Firefox 38 onwards
+			</div>
+			<!--footer section ends above-->
+		</div>
+		<p class="loading_ajax" id="loading_ajaxpage" style="display:none;">
+			<span class="loading_ajax_div">
+			</span>
+			<img src="assets/private/images/NIA_gif2.gif" />
+		</p>
+	</body>
+		<!---------------------------------------------------------SCRIPT FILES--------------------------------------------------->
+	<!-- <script type="text/javascript" src="assets/private/js/portal.js"></script> -->
+	<!---------------------------------------------------------SCRIPT FILES--------------------------------------------------->
+	
+	<script>
+	/****Code added for old docs****/
+	function resetOldSearchForm() {
+
+	    document.forms['docSearchForm_old'].reset();
+	    $("p").remove();
+	    $.fn.getPwdDetailsCall_reset();
+	 //   $.fn.validateThisReset();
+	  } 
+	/****Code added for old docs****/
+	
+	/****Code added for recent docs starts****/
+	function showRecentdocuments() {
+	    $("p").remove();
+	    $.fn.getPwdDetailsCall_reset();
+	    $('#searchview_recent').hide();
+		$('#searchviewNull_recent').hide();
+		$("#searchtable_recent").hide();
+		$.fn.documentSearch_recent();
+	  } 
+	/****Code added for recent docs ends****/
+	
+	function resetSearchForm() {
+
+	    document.forms['docSearchForm'].reset();
+	    searchtypevisible();
+	    $("p").remove();
+	    $.fn.getPwdDetailsCall_reset();
+	 //   $.fn.validateThisReset();
+	} 
+	
+	function resetUploadForm() {
+
+	    document.forms['docUploadForm'].reset();
+	    $("p").remove();
+	   $.fn.getPwdDetailsCall_reset();
+	//	$.fn.validateThisReset();
+		
+	}
+	
+	 </script>
+			<script type="text/javascript">
+			$(function () {
+			    $('#1txtDate').datepicker();
+			});
+			
+			</script>
+			<script>
+			function validateFilename()
+			{
+				
+			if($('#searchfilename').val().length >= 4 || $('#searchfilename').val().length =="")
+				{
+				$('#searchForm_file_Error').css( "display","none");
+				return true;
+				}
+			else
+				{
+				$('#searchForm_file_Error').css( "display","block").text("Enter File Name with minimum 4 characters");
+				return false;
+				}
+				
+			}
+			
+			/****Code for old docs****/
+			function logout() {
+				$.fn.logOut();
+			}
+			function validateDeptname_old()
+			{
+				
+			if($('#searchdepartmentname_old').val().length !="")
+				{
+				$('#searchForm_file_Error_old').css( "display","none");
+				return true;
+				}
+			else
+				{
+				$('#searchForm_file_Error_old').css( "display","block").text("Select Department name");
+				return false;
+				}
+				
+			}
+			/****Code for old docs****/
+			
+		</script>
+		<script>
+			$(document).ready(function() {
+				
+			    $(".tabs-menu a").click(function(event) {
+			    
+			        event.preventDefault();
+			        $(this).parent().addClass("current");
+			        $(this).parent().siblings().removeClass("current");
+			        var tab = $(this).attr("href");
+			        $(".tab-content").not(tab).css("display", "none");
+			        $(tab).fadeIn();
+			    });
+			    
+			    $.fn.getPwdDetailsCall();
+			    $.fn.departmentName();
+			    $.fn.departmentNameVisibleTo();
+			    $.fn.departmentNameSearchTo();
+			    docUploadResponse();
+			 
+			    $('textarea[maxlength]').keyup(function(){  
+			        var limit = parseInt($(this).attr('maxlength'));  
+			        var text = $(this).val();  
+			        var chars = text.length;  
+			        if(chars > limit){  
+			            var new_text = text.substr(0, limit);  
+			            $(this).val(new_text);  
+			        }  
+			    }); 
+			    
+			});
+			
+				   
+				   /* added for visible to department name Doc store Upgradation Starts*/
+				   
+				 
+				   $("#uploaddepartmentnameVisibleTo").html($('#uploaddepartmentnameVisibleTo option').sort(function(x, y) {
+				         return $(x).text() > $(y).text() ? -1 : 1;
+				   }))
+				   $("#uploaddepartmentnameVisibleTo").get(0).selectedIndex = 0;
+				   /*
+				   $("#searchdepartmentnameVisibleTo").html($('#searchdepartmentnameVisibleTo option').sort(function(x, y) {
+				         return $(x).text() > $(y).text() ? -1 : 1;
+				   }))
+				   $("#searchdepartmentnameVisibleTo").get(0).selectedIndex = 0;
+				   /* added for visible to department name Doc store Upgradation Ends*/
+				   
+				  
+		</script>
+		<script>
+			$('#upload').change(function() {
+				
+				 validFiletype();
+			    
+			});
+			
+			
+		</script>
+		<script>
+		function validFiletype(){
+		    var filename = $('#upload').val();
+		    var lastIndex = filename.lastIndexOf("\\");
+		    if (lastIndex >= 0) {
+		        filename = filename.substring(lastIndex + 1);
+		    }
+		    var ext = filename.substring(filename.lastIndexOf('.') + 1).toLowerCase();
+
+		    if(!(ext=="pdf"||ext=="tiff"||ext=="tif"||ext=="xlsx"||ext=="xlx"||ext=="doc"||ext=="docx"||ext=="ppt"||ext=="pptx"||ext=="jpeg"||ext=="jpg"||ext=="xls"||ext=="odt"||ext=="ods"||ext=="odf"))
+	    	{
+	    	alert("Invalid file type. Please select appropriate File type.");
+
+	    	 $('#filename').val("");
+	    	 $('#upload').val("");
+
+         	return false;
+	    	}
+		    else{
+		    $('#filename').val(filename);
+		    $('#filename').click();
+		    return true;
+		    }
+			} 
+		
+	    
+		</script>
+		<script>
+			function toggle_visibility(id) 
+			{
+			  var e = document.getElementById(id);
+			  if (e.style.display == 'block' )
+			  {
+			      e.style.display = 'none';
+			  }
+			  else 
+			  {
+			      e.style.display = 'block';
+			  }
+			}
+			
+			function callDocupload() {
+				document.docUploadForm.action="http://cwiss.newindia.co.in:8888/DocStoreWebComp/ServletToUploadDirectlyAlfresco";
+ 			     document.docUploadForm.submit();
+			}
+			searchtypevisible();   
+			$("input:radio[name=search]").change(function() {
+				searchtypevisible();
+			});
+			function searchtypevisible(){
+		    var selectedsearchtype=$('input[name=search]:checked','#docSearchForm').val();
+		 	if(selectedsearchtype=="UDR")
+				{
+				$("#docPublishDate").hide();
+				$("#docUploadDate").show();
+				}
+			else if(selectedsearchtype=="PDR")
+				{
+				
+				$("#docUploadDate").hide();
+				$("#docPublishDate").show();
+			    }
+			
+			}
+			
+			$.fn.validateThis = function(formId){
+				var type;
+				var id;
+				
+				var msg;
+				var retur_bool = false;
+				var selectedText;
+				var result;
+				Element.prototype.appendBefore = function(element) {
+				  element.parentNode.insertBefore(this, element);
+				}, false;
+
+				Element.prototype.appendAfter = function(element) {
+				  element.parentNode.insertBefore(this, element.nextSibling);
+				}, false;
+				result=true;
+				var NewElement;
+				$.each(formId.split(","), function (key,value) {
+					type=value.split(":")[0].split("$")[1];
+					id=value.split(":")[0].split("$")[0];
+					msg=value.split(":")[1];
+					
+					NewElement = document.createElement('p');
+					NewElement.innerHTML = msg;
+					NewElement.id = id;
+					NewElement.className += "error";
+					NewElement.style.display="inline";
+					
+					
+					if(type == "input"){
+						if(document.getElementById(id).value == ""){
+							if(!$( "#"+id ).next().is("p")){
+								NewElement.appendAfter(document.getElementById(id));
+								retur_bool=false;
+								console.log("retur_bool"+retur_bool);
+							}
+						}
+						document.getElementById(id).onkeypress = KeyPressHandler_validation;
+						document.getElementById(id).onkeyup = KeyPressHandler_validation;
+						document.getElementById(id).onclick = KeyPressHandler_validation;
+						
+					}else if(type == "select"){
+						document.getElementById(id).onchange = changeHandler_validation;
+						selectedText = document.getElementById(id).options[document.getElementById(id).selectedIndex].value;
+						
+						if(selectedText==""){
+						
+							if(!$( "#"+id ).next().is("p")){
+								
+								NewElement.appendAfter(document.getElementById(id));
+								console.log(id);
+								retur_bool=false;
+							}
+						}
+					}else if(type == "radio"){
+						
+					}
+					
+					if(!isValidationPasses(id))
+						result = false;
+					});
+				
+				return result;
+			};
+			
+			function isValidationPasses(spanElementBeforeId){
+				var retur_bool=true;
+				console.log("id"+spanElementBeforeId)
+				if($( "#"+spanElementBeforeId ).next().css( "display" ) == 'inline' || $( "#"+spanElementBeforeId ).next().css( "display" ) == 'inline-block'){
+					retur_bool=false;
+					console.log("retur_bool"+retur_bool);
+				}
+				return retur_bool;
+			}
+			
+			function changeHandler_validation(event){
+				
+				var target = event ? event.target : window.event.srcElement;
+				
+				selectedText = document.getElementById(target.id).options[document.getElementById(target.id).selectedIndex].text;
+					showHide_select_msg(target.id, selectedText);
+			}
+			
+			function KeyPressHandler_validation(event){
+				var target = event ? event.target : window.event.srcElement;
+				showHide_input_msg(target.id);
+			}
+			
+			function showHide_input_msg(idVal){
+				if(document.getElementById(idVal).value==""){
+					console.log("idVal"+idVal);
+					$( "#"+idVal ).next().css( "display", "inline-block" );
+					retur_bool=false;
+				} else{
+					
+					$( "#"+idVal ).next().css( "display", "none" );
+					retur_bool=true;
+				}
+			}
+			
+			function showHide_select_msg(idVal, val){
+				if(val==""){
+					$( "#"+idVal ).next().css( "display", "inline-block" );
+					retur_bool=false;
+				}
+				else{
+					$( "#"+idVal ).next().css( "display", "none" );
+					retur_bool=true;
+				}
+			}
+			
+         function validateuploadDate()
+         {
+        	 
+        	 if($('#docuploaddatefrom').val()==""||$('#docuploaddateto').val()==""){
+					
+					return false;
+				}
+        	 else
+        		 {
+        		
+        		 return true;
+        		 
+        		 }
+         }
+         function validatepublishDate()
+         {
+        	 
+        	 if($('#docpublishdatefrom').val()==""||$('#docpublishdateto').val()==""){
+					
+					return false;
+				}
+        	 else
+        		 {
+        		
+        		 return true;
+        		 
+        		 }
+         }
+			
+			$("#documentupload").on("click", function() {
+				var docUploadForm="filename$input:Select a File,uploaddepartmentname$select:Select Department name,description$input:Enter Description,docpublishdate$input:Select Document Published Date,uploadissuedby$select:Select the value for 'Issued By' field,uploaddocumenttype$select:Select Document type,docuploaddate$input:Select Document Upload Date,uploaddepartmentnameVisibleTo$select:Select the value for 'Visible To' field";
+				if($.fn.validateThis(docUploadForm)){
+					callDocupload();
+				}
+				else {
+					alert("Kindly fill all the mandatory fields.");
+				}
+			});
+			
+			
+			$("#searchSubmit").on("click", function() {
+				
+				$('#searchview').hide();
+				$('#searchviewNull').hide();
+				var unwantedSpan="udr:docpublishdatefrom$docpublishdateto,pdr:docuploaddatefrom$docuploaddateto";
+				var searchSubmit;
+				
+				
+				if($('#udr').is(':checked')){				
+					searchSubmit="searchdepartmentname$select:Select Department name,docuploaddatefrom$input:Select a date,docuploaddateto$input:Select a date";
+					//if( validateFilename() && $.fn.validateThis(searchSubmit) && validateuploadDate() &&  dateDiff_indays("docuploaddatefrom", "docuploaddateto", '365','searchForm_DateLimt_Error')  ){
+						if( $.fn.validateThis(searchSubmit) && validateuploadDate()){
+						
+						$.fn.documentSearch();
+					}
+				} else{
+					searchSubmit="searchdepartmentname$select:Select Department name,docpublishdatefrom$input:Select a date,docpublishdateto$input:Select a date";
+					
+					if($.fn.validateThis(searchSubmit) && validatepublishDate() ){
+					
+						$.fn.documentSearch();
+					}
+				}
+			});
+			
+			/****Code added for old documents****/
+			  function validateuploadDate_old()
+         {
+				 
+        	 if($('#docuploaddatefrom_old').val()=="" && $('#docuploaddateto_old').val()!=""){
+        		   $('#searchForm_DateLimt_Error_old').css( "display","block").text("Enter 'Document Upload Date From'.");
+					return false;
+				}
+        	 else if($('#docuploaddatefrom_old').val()!="" && $('#docuploaddateto_old').val()==""){
+        		 $('#searchForm_DateLimt_Error_old').css( "display","block").text("Enter 'Document Upload Date To'.");
+					return false;
+				}
+        	 else
+        		 {
+        		 $('#searchForm_DateLimt_Error_old').css( "display","none");
+        		 return true;
+        		 
+        		 }
+         }
+			 
+			$("#searchSubmit_old").on("click", function() {
+				$('#searchview_old').hide();
+				$('#searchviewNull_old').hide();
+					var searchSubmit;
+					searchSubmit="searchdepartmentname_old$input:Select Department name,docuploaddatefrom_old$input:Select a date,docuploaddateto_old$input:Select a date";	
+						if(validateDeptname_old() && validateuploadDate_old())
+						{
+							$.fn.documentSearch_old();
+						}
+				
+				});
+				
+			/****Code added for old documents****/
+			
+			
+			function dateDiff_indays(id1, id2, timeFrame, errorId){
+				
+				if(parseInt(timeFrame) < moment.duration(moment($("#"+id2).val(), "DD-MM-YYYY").diff(moment($("#"+id1).val(), "DD-MM-YYYY"))).asDays()){
+					$( "#"+errorId ).css( "display", "inline" ).text("Selected date range should be less than 365 days");
+					return false;
+				} else {
+					$( "#"+errorId ).css( "display", "none" );
+					if(moment($("#"+id2).val(), "DD-MM-YYYY").isBefore(moment($("#"+id1).val(), "DD-MM-YYYY"))){
+						$( "#"+errorId ).css( "display", "inline" ).text("To date cannot be less than from date");
+						return false;
+					} else {
+						$( "#"+errorId ).css( "display", "none" );
+						return true;
+					}
+					return true;
+				}
+					
+			}
+
+			function clearUnwantedSpan(data){
+				
+				$.each(data.split(","), function (key,value) {
+					
+					if(value.split(":")[0].checked)
+						$.each(value.split(":")[1].split("$"), function (key1,value1) {
+							$( "#"+value1 ).next().css( "display", "inline" );
+						});
+				});
+				
+				return true;
+			}
+			
+			$( document ).ajaxStart(function() {
+				  $( "#loading_ajax" ).show();
+				});
+
+			$( document ).ajaxComplete(function() {
+				 $( "#loading_ajax" ).hide();
+				});
+
+			$( document ).ajaxError(function() {
+				$( "#loading_ajax" ).hide();
+			});
+
+			function toggleVisibility(){
+				var test = $('select[name=uploaddepartmentnameVisibleTo]').val();
+					if(test == 'All'){
+						$("input[type=radio]").attr('disabled', true);
+						$("#confidentialNo").prop("checked", true)
+					}
+					else{
+						$("input[type=radio]").attr('disabled', false);
+					}
+					}  
+			
+			$('#upload').bind('change', function() {
+	            var uploadedSize =this.files[0].size/1024/1024;
+	            if (uploadedSize > 10){
+	            	alert('File size should be less than 10 MB');
+	               	resetUploadForm();
+
+	            }
+
+	        }); 
+			
+			$( document ).ajaxStart(function() {
+				  $( "#loading_ajaxpage" ).show();
+				});
+			
+			$( document ).ajaxComplete(function() {
+				 $( "#loading_ajaxpage" ).hide();
+				});
+			
+			$( document ).ajaxError(function() {
+				$( "#loading_ajaxpage" ).hide();
+			});
+		</script>
+</html>

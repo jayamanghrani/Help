@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>EmployeePortal-parent</name>
+	<comment></comment>
+	<projects>
+		<project>EmployeePortalASBO</project>
+		<project>EmployeePortalCache</project>
+		<project>EmployeePortalCommons</project>
+		<project>EmployeePortalComponentInvoker</project>
+		<project>EmployeePortalConfigUtil</project>
+		<project>EmployeePortalController</project>
+		<project>EmployeePortalPersist</project>
+		<project>EmployeePortalServiceObjects</project>
+		<project>EmployeePortalTransformation</project>
+		<project>EmployeePortalUtil</project>
+		<project>EmployeePortalWebComp</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.m2e.core.maven2Builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+	</natures>
+</projectDescription>

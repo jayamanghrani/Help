@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="UmsRolePersist" transaction-type="RESOURCE_LOCAL">
+	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>  
+		<non-jta-data-source>UMSDS</non-jta-data-source>
+   <class>com.tcs.umsrole.persist.entity.RoleRequestMaster</class> 
+    <class>com.tcs.umsrole.persist.entity.PermListHistoryUpdate</class> 
+     <class>com.tcs.umsrole.persist.entity.ProvisionDetails</class> 
+      <class>com.tcs.umsrole.persist.entity.UserMasterUpdate</class>
+      <class>com.tcs.umsrole.persist.entity.UmsRoleMap</class>
+      <class>com.tcs.umsrole.persist.entity.UmsApplicationMap</class>
+      <class>com.tcs.umsrole.persist.entity.ProvisionLog</class>
+	<properties>
+       <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver" />
+  <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect" />
+      <!-- Hibernate properties -->
+     <property name="hibernate.show_sql" value="true" />
+
+    </properties>   	
+	</persistence-unit>
+</persistence>
+
+

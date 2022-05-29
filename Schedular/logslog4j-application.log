@@ -1,0 +1,55 @@
+2015-12-07 18:45:46 ERROR ResourceManager:118 - Excetion Caught in Reading Property file: config\config.properties (The system cannot find the path specified)
+2015-12-07 18:45:46 ERROR Email_Sender:373 -  ClassNotFoundException Exception: 
+java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at com.nia.jpa.helper.ResourceManager.getConnection(ResourceManager.java:159)
+	at com.nia.main.Email_Sender.list_AccountingPrograme(Email_Sender.java:149)
+	at com.nia.main.Email_Sender.Generate_outputMap(Email_Sender.java:71)
+	at com.nia.main.Email_Sender.main(Email_Sender.java:350)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:58)
+2015-12-07 18:48:44 ERROR ResourceManager:118 - Excetion Caught in Reading Property file: config\config.properties (The system cannot find the path specified)
+2015-12-07 18:48:44 ERROR Email_Sender:306 -  ClassNotFoundException Exception: 
+java.lang.ClassNotFoundException: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:191)
+	at com.nia.jpa.helper.ResourceManager.getConnection(ResourceManager.java:160)
+	at com.nia.main.Email_Sender.list_AccountingPrograme(Email_Sender.java:127)
+	at com.nia.main.Email_Sender.Generate_outputMap(Email_Sender.java:63)
+	at com.nia.main.Email_Sender.main(Email_Sender.java:283)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:58)
+2016-01-08 12:13:31 INFO  Email_Sender:277 - utility started
+2016-07-14 18:40:13 INFO  Email_Sender:264 - utility started
+2016-07-14 18:40:35 INFO  Email_Sender:264 - utility started
+2016-07-14 18:45:27 INFO  Email_Sender:264 - utility started
+2016-07-15 12:06:23 INFO  Email_Sender:269 - utility started
+2016-07-15 12:34:22 INFO  Email_Sender:269 - utility started
+2016-07-15 12:53:11 INFO  Email_Sender:269 - utility started
+2016-07-15 15:13:25 INFO  Email_Sender:269 - utility started
+2016-07-15 15:18:41 DEBUG Email_Sender:280 -  Email sent. & Time taken to generate Report :317156 ms)
+2016-07-15 15:23:21 INFO  Email_Sender:269 - utility started
+2016-07-15 15:25:45 DEBUG Email_Sender:280 -  Email sent. & Time taken to generate Report :144094 ms)
+2016-07-18 15:21:44 INFO  Email_Sender:269 - utility started
+2016-07-18 15:25:27 INFO  Email_Sender:269 - utility started
+2016-07-18 15:27:41 DEBUG Email_Sender:280 -  Email sent. & Time taken to generate Report :133901 ms)
+2016-07-18 15:31:50 INFO  Email_Sender:269 - utility started
+2016-07-18 15:34:23 DEBUG Email_Sender:280 -  Email sent. & Time taken to generate Report :153344 ms)
+2016-07-18 18:29:52 INFO  Email_Sender:269 - utility started
+2016-07-18 18:43:28 INFO  Email_Sender:269 - utility started
+2016-07-18 18:45:44 INFO  Email_Sender:269 - utility started
+2016-07-18 18:47:06 INFO  Email_Sender:269 - utility started
+2016-07-18 18:48:46 DEBUG Email_Sender:280 -  Email sent. & Time taken to generate Report :99495 ms)
+2016-07-19 11:01:11 INFO  Email_Sender:269 - utility started
+2016-07-19 11:03:43 DEBUG Email_Sender:280 -  Email sent. & Time taken to generate Report :151799 ms)
+2016-07-19 11:12:05 INFO  Email_Sender:269 - utility started
+2016-07-19 11:14:36 DEBUG Email_Sender:280 -  Email sent. & Time taken to generate Report :151056 ms)
+2016-07-19 13:58:03 INFO  Email_Sender:269 - utility started
+2016-07-19 14:00:54 DEBUG Email_Sender:280 -  Email sent. & Time taken to generate Report :170435 ms)

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ccmReports">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="poi-3.17.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/1332452/Downloads/poi-bin-3.17-20170915/poi-3.17/poi-3.17.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="poi-ooxml-schemas-3.17.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/1332452/Downloads/poi-bin-3.17-20170915/poi-3.17/poi-ooxml-schemas-3.17.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="poi-ooxml-3.17.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/1332452/Downloads/poi-bin-3.17-20170915/poi-3.17/poi-ooxml-3.17.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xmlbeans-2.6.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/1332452/Downloads/poi-bin-3.17-20170915/poi-3.17/ooxml-lib/xmlbeans-2.6.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/ccmReports/build/classes"/>
+        <property name="context-root" value="ccmReports"/>
+    </wb-module>
+</project-modules>

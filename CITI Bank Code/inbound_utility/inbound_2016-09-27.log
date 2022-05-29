@@ -1,0 +1,103 @@
+2016-09-27 13:23:49 DEBUG Filecopyciti:36 - Utility started at :: 13:23:48
+2016-09-27 13:23:51 INFO  ResourceManager:119 - Entry : copyFilesfromRemoteDir method
+2016-09-27 13:23:51 INFO  SftpUtility:52 - Entry : getFileFromRemoteDir method
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::inbound_B
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::inbound_B
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::inbound_A
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::inbound_A
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::.Xauthority
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::.Xauthority
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::.bash_history
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::.bash_history
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::lost+found
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::lost+found
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::.
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::.
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::Backup
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::Backup
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::.viminfo
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::.viminfo
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::..
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::..
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::outbound_B
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::outbound_B
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::outbound_A
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::outbound_A
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::Application
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::Application
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::SoftwareDownload
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::SoftwareDownload
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::jdk
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::jdk
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::.ssh
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::.ssh
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::TestData
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::TestData
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::PNB
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::PNB
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::TestFiles
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::Log
+2016-09-27 13:23:53 INFO  SftpUtility:92 - fidentifier.getFPrefix()::t123
+2016-09-27 13:23:53 INFO  SftpUtility:93 - fileEntry.getFilename()::Log
+2016-09-27 13:23:53 INFO  SftpUtility:139 - No file with the required prefix found in directory /NIAFTP
+2016-09-27 13:23:58 ERROR Email_Sender:213 - MessagingException Exception535 authorization failed
+
+javax.mail.AuthenticationFailedException: 535 authorization failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.nia.helper.Email_Sender.sendEmail(Email_Sender.java:204)
+	at com.nia.helper.ResourceManager.sendMailOnError(ResourceManager.java:438)
+	at com.nia.jpa.exception.NoFileFoundException.<init>(NoFileFoundException.java:20)
+	at com.nia.helper.SftpUtility.getFileFromRemoteDir(SftpUtility.java:140)
+	at com.nia.helper.ResourceManager.copyFilesfromRemoteDir(ResourceManager.java:125)
+	at com.nia.main.Filecopyciti.copyFileFromRemoteDir(Filecopyciti.java:53)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:88)
+2016-09-27 13:23:58 ERROR Filecopyciti:165 -  NoFileFoundException ::
+com.nia.jpa.exception.NoFileFoundException: No files are found in the directory /NIAFTP on CITI server. 
+ Hence no files are downloaded from CITI server. 
+
+	at com.nia.helper.SftpUtility.getFileFromRemoteDir(SftpUtility.java:140)
+	at com.nia.helper.ResourceManager.copyFilesfromRemoteDir(ResourceManager.java:125)
+	at com.nia.main.Filecopyciti.copyFileFromRemoteDir(Filecopyciti.java:53)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:88)

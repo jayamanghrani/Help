@@ -1,0 +1,27 @@
+package com.tcs.umsapp.search.persist.query;
+
+
+public class Queries {
+
+	public static final String UserBranch = "select uum_branch_id from ums_usr_mst where uum_usr_id = :userId";
+	
+	public static final String UserDetails = "select distinct uum.uum_usr_id as userID,uum.uum_branch_id as branchID,uum.uum_supervisor_id as supervisorID,uum.uum_first_name  as firstName,uum.uum_middle_name as middleName,uum.uum_last_name as lastName,uum.uum_gender as gender,uum.uum_email as email,uum.uum_mobile as phone,uum.uum_city as city,uum.uum_state as state,uum.uum_country as country,uum.uum_pin as pincode,uum.uum_dob as dob,uum.uum_addr1 as address1,uum.uum_addr2 as address2,uum.uum_addr3 as address3,uum.uum_phone_no as phoneno,uum.uum_ip_phone as ipphone,uum.uum_extension as extension,uum.uum_start_date stdate,uum.uum_end_date as endDate,uum.uum_title as title,uum.uum_designation as designation,uum.uum_usr_type_id as usrtype,uum.uum_created_by as createdBy,uum.uum_created_date as createdDate,uum.uum_permission_list as permList from ums_usr_mst uum";
+	
+	public static final String UserSearchRequest = "select distinct uum.uum_usr_id as userID, uum.uum_branch_id as branchID, uum.uum_supervisor_id as supervisorID,uum.uum_first_name  as firstName,uum.uum_last_name as lastName,uum.uum_designation as designation from ums_usr_mst uum where uum.uum_status ='E' and uum.uum_usr_id = :userId";
+	
+	public static final String UserSearchRoleDetailPost = "select uam.uam_appl_name, urm.urm_role_name, uam.uam_appl_id, urm.urm_role_id, uurm.uurm_branch_id, uurm.UURM_START_DATE, uurm.UURM_END_DATE from ums_usr_role_map uurm,ums_role_mst urm,ums_appl_mst uam where uurm.uurm_role_id = urm.urm_role_id and urm.urm_appl_id = uam.uam_appl_id and uurm.uurm_usr_id = :userId and (uurm.uurm_end_date is null OR uurm.uurm_end_date > sysdate) and uurm.uurm_appl_approved_status = 'Y' AND urm.URM_STATUS = 'E' ";
+	
+	public static final String UserSearchRoleDetailPostXLS = "select  uum.uum_usr_id, uum.uum_branch_id, uum.uum_first_name, uum.uum_last_name, urm.urm_role_name, uam.uam_appl_name, urm.urm_role_id, uam.uam_appl_id , uurm.uurm_appl_approved_status from ums_usr_mst uum, ums_role_mst urm, ums_appl_mst uam , ums_usr_role_map uurm where uurm.uurm_usr_id in :userId and uum.uum_usr_id=uurm.UURM_USR_ID and uurm.UURM_ROLE_ID= urm.urm_role_id and urm.urm_appl_id = uam.uam_appl_id and uurm.uurm_appl_approved_status = 'Y' and (uurm.uurm_end_date is null OR uurm.uurm_end_date > sysdate) ";
+	
+	public static final String UserSearchPermissionDetailPost ="Select uum.uum_usr_id as userId, uum.uum_permission_list as UserPermissionList from ums_usr_mst uum where uum.uum_usr_id = :userId";
+	
+	public static final String RequestTrackDetailPost = "select distinct urm.urqm_request_id as reqID, upd.upd_usr_id as userID,uum.uum_branch_id as branchID,upd. upd_created_by as reqBY,to_char(urm.urqm_requested_date,'DD-MON-YY HH12:MM:SS') as reqDate,urm.urqm_reason as reqReason from ums_usr_mst  uum, ums_request_mst urm, ums_prov_dtls upd where uum.uum_usr_id = upd.upd_usr_id and urm.urqm_request_id = upd.upd_request_id and uum.uum_end_date is null and uum.uum_status ='E'";
+	
+	public static final String RequestTrackAppRoleDetailPost = "select DISTINCT upd.upd_prov_id as provID, uam.uam_appl_name as applicationName, urm.urm_role_name as roleName, decode(upd.upd_prov_action,'AP','Add Permission', 'AR','Add Role', 'DR','Revoke Role') as provAction, decode(upd.upd_prov_status,'R','Pending', 'S', 'Success', 'F','Fail','I','Pending') as provStatus, to_char(upd.UPD_MODIFIED_DATE) as provDate, nvl(upl.upl_remark,'NA') as remark, upd.upd_branch_id AS branchId from ums_prov_dtls upd, ums_prov_log upl, ums_appl_mst uam, ums_role_mst urm where   upd.upd_prov_id = upl.upl_prov_id(+) and urm.urm_role_id(+) = upd.upd_role_id and uam.uam_appl_id = upd.upd_appl_id and upd.upd_usr_id = :userId and upd.upd_request_id = :requestId and urm.urm_status= 'E' ";
+	
+	public static final String UserRoleInPending = "select uam.uam_appl_name,  urm.urm_role_name, upd.upd_appl_id, upd.upd_role_id, upd.upd_prov_status, uurm.uurm_branch_id, uurm.UURM_START_DATE, uurm.UURM_END_DATE from ums_prov_dtls upd ,ums_appl_mst uam, ums_role_mst urm, ums_usr_role_map uurm where upd.upd_appl_id = uam.uam_appl_id AND uurm.UURM_PROV_ID = upd.UPD_PROV_ID AND upd.upd_usr_id = uurm.uurm_usr_id AND urm.urm_role_id = upd.upd_role_id AND upd.upd_prov_action IN ('AR','DR') AND upd.upd_usr_id = :userId AND upd.upd_prov_status NOT IN ('S','F') ";
+
+    public static final String RequestTrackXLSQuery = "select DISTINCT urem.urqm_request_id as reqID, upd.upd_usr_id as userID, uum.uum_branch_id as branchID, upd. upd_created_by as reqBY, to_char(urem.urqm_requested_date,'DD-MON-YY HH12:MM:SS') as reqDate, urem.urqm_reason as reqReason, upd.upd_prov_id as provID, uam.uam_appl_name as applicationName, urm.urm_role_name as roleName, decode(upd.upd_prov_action,'AP','Add Permission', 'AR','Add Role', 'DR','Revoke Role') as provAction, nvl(decode(upd.upd_prov_status,'R','Pending', 'S', 'Success', 'F','Fail'),'NA') as provStatus, nvl(to_char(upd.upd_prov_date),'NA') as provDate, nvl(upl.upl_remark,'NA') as remark from ums_prov_dtls upd, ums_prov_log upl, ums_appl_mst uam, ums_role_mst urm ,ums_usr_mst  uum ,ums_request_mst urem where upd.upd_prov_id = upl.upl_prov_id(+) and urm.urm_role_id(+) = upd.upd_role_id and uam.uam_appl_id = upd.upd_appl_id";
+
+    public static final String AllOfficeCodes = "Select distinct uum.UUM_BRANCH_ID from ums_usr_mst uum ";
+}

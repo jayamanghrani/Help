@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="UmsUserUpdatePersist" transaction-type="RESOURCE_LOCAL">
+    
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <non-jta-data-source>UMSDS</non-jta-data-source>
+        <class>com.tcs.umsuser.persist.entities.UmsTempRec</class>
+        <class>com.tcs.umsuser.persist.entities.ProvisionDetails</class>
+        <class>com.tcs.umsuser.persist.entities.UmsUserAppMap</class>
+        <class>com.tcs.umsuser.persist.entities.UserMasterUpdate</class>
+    
+    
+    
+    	<properties>
+
+      <property name="hibernate.show_sql" value="true" />
+     
+
+    </properties> 
+    
+    
+    </persistence-unit> 
+</persistence>

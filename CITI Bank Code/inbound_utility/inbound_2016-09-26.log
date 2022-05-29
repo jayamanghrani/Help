@@ -1,0 +1,147 @@
+2016-09-26 11:28:51 DEBUG Filecopyciti:36 - Utility started at :: 11:28:50
+2016-09-26 11:28:55 INFO  SftpUtility:143 - No file with the required prefix found in directory /NIAFTP
+2016-09-26 11:29:01 ERROR Email_Sender:213 - MessagingException Exception535 authorization failed
+
+javax.mail.AuthenticationFailedException: 535 authorization failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.nia.helper.Email_Sender.sendEmail(Email_Sender.java:204)
+	at com.nia.helper.ResourceManager.sendMailOnError(ResourceManager.java:434)
+	at com.nia.jpa.exception.NoFileFoundException.<init>(NoFileFoundException.java:20)
+	at com.nia.helper.SftpUtility.getFileFromRemoteDir(SftpUtility.java:144)
+	at com.nia.helper.ResourceManager.copyFilesfromRemoteDir(ResourceManager.java:129)
+	at com.nia.main.Filecopyciti.copyFileFromRemoteDir(Filecopyciti.java:53)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:88)
+2016-09-26 12:49:37 DEBUG Filecopyciti:36 - Utility started at :: 12:49:36
+2016-09-26 12:49:41 INFO  SftpUtility:143 - No file with the required prefix found in directory /NIAFTP
+2016-09-26 12:49:47 ERROR Email_Sender:213 - MessagingException Exception535 authorization failed
+
+javax.mail.AuthenticationFailedException: 535 authorization failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.nia.helper.Email_Sender.sendEmail(Email_Sender.java:204)
+	at com.nia.helper.ResourceManager.sendMailOnError(ResourceManager.java:434)
+	at com.nia.jpa.exception.NoFileFoundException.<init>(NoFileFoundException.java:20)
+	at com.nia.helper.SftpUtility.getFileFromRemoteDir(SftpUtility.java:144)
+	at com.nia.helper.ResourceManager.copyFilesfromRemoteDir(ResourceManager.java:129)
+	at com.nia.main.Filecopyciti.copyFileFromRemoteDir(Filecopyciti.java:53)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:88)
+2016-09-26 13:02:37 DEBUG Filecopyciti:36 - Utility started at :: 13:2:37
+2016-09-26 13:02:39 INFO  SftpUtility:143 - No file with the required prefix found in directory /NIAFTP
+2016-09-26 13:02:44 ERROR Email_Sender:213 - MessagingException Exception535 authorization failed
+
+javax.mail.AuthenticationFailedException: 535 authorization failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.nia.helper.Email_Sender.sendEmail(Email_Sender.java:204)
+	at com.nia.helper.ResourceManager.sendMailOnError(ResourceManager.java:434)
+	at com.nia.jpa.exception.NoFileFoundException.<init>(NoFileFoundException.java:20)
+	at com.nia.helper.SftpUtility.getFileFromRemoteDir(SftpUtility.java:144)
+	at com.nia.helper.ResourceManager.copyFilesfromRemoteDir(ResourceManager.java:129)
+	at com.nia.main.Filecopyciti.copyFileFromRemoteDir(Filecopyciti.java:53)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:88)
+2016-09-26 14:00:39 DEBUG Filecopyciti:36 - Utility started at :: 14:0:39
+2016-09-26 14:00:41 INFO  SftpUtility:143 - No file with the required prefix found in directory /NIAFTP
+2016-09-26 14:00:47 ERROR Email_Sender:213 - MessagingException Exception535 authorization failed
+
+javax.mail.AuthenticationFailedException: 535 authorization failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.nia.helper.Email_Sender.sendEmail(Email_Sender.java:204)
+	at com.nia.helper.ResourceManager.sendMailOnError(ResourceManager.java:434)
+	at com.nia.jpa.exception.NoFileFoundException.<init>(NoFileFoundException.java:20)
+	at com.nia.helper.SftpUtility.getFileFromRemoteDir(SftpUtility.java:144)
+	at com.nia.helper.ResourceManager.copyFilesfromRemoteDir(ResourceManager.java:129)
+	at com.nia.main.Filecopyciti.copyFileFromRemoteDir(Filecopyciti.java:53)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:88)
+2016-09-26 14:38:35 DEBUG Filecopyciti:36 - Utility started at :: 14:38:35
+2016-09-26 14:38:37 INFO  SftpUtility:143 - No file with the required prefix found in directory /NIAFTP
+2016-09-26 14:38:42 ERROR Email_Sender:213 - MessagingException Exception535 authorization failed
+
+javax.mail.AuthenticationFailedException: 535 authorization failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.nia.helper.Email_Sender.sendEmail(Email_Sender.java:204)
+	at com.nia.helper.ResourceManager.sendMailOnError(ResourceManager.java:434)
+	at com.nia.jpa.exception.NoFileFoundException.<init>(NoFileFoundException.java:20)
+	at com.nia.helper.SftpUtility.getFileFromRemoteDir(SftpUtility.java:144)
+	at com.nia.helper.ResourceManager.copyFilesfromRemoteDir(ResourceManager.java:129)
+	at com.nia.main.Filecopyciti.copyFileFromRemoteDir(Filecopyciti.java:53)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:88)
+2016-09-26 17:06:14 DEBUG Filecopyciti:36 - Utility started at :: 17:6:13
+2016-09-26 17:06:17 INFO  SftpUtility:143 - No file with the required prefix found in directory /NIAFTP
+2016-09-26 17:06:22 ERROR Email_Sender:213 - MessagingException Exception535 authorization failed
+
+javax.mail.AuthenticationFailedException: 535 authorization failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.nia.helper.Email_Sender.sendEmail(Email_Sender.java:204)
+	at com.nia.helper.ResourceManager.sendMailOnError(ResourceManager.java:434)
+	at com.nia.jpa.exception.NoFileFoundException.<init>(NoFileFoundException.java:20)
+	at com.nia.helper.SftpUtility.getFileFromRemoteDir(SftpUtility.java:144)
+	at com.nia.helper.ResourceManager.copyFilesfromRemoteDir(ResourceManager.java:129)
+	at com.nia.main.Filecopyciti.copyFileFromRemoteDir(Filecopyciti.java:53)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:88)
+2016-09-26 17:18:40 DEBUG Filecopyciti:36 - Utility started at :: 17:18:40
+2016-09-26 17:18:42 INFO  SftpUtility:143 - No file with the required prefix found in directory /NIAFTP
+2016-09-26 17:18:48 ERROR Email_Sender:213 - MessagingException Exception535 authorization failed
+
+javax.mail.AuthenticationFailedException: 535 authorization failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.nia.helper.Email_Sender.sendEmail(Email_Sender.java:204)
+	at com.nia.helper.ResourceManager.sendMailOnError(ResourceManager.java:434)
+	at com.nia.jpa.exception.NoFileFoundException.<init>(NoFileFoundException.java:20)
+	at com.nia.helper.SftpUtility.getFileFromRemoteDir(SftpUtility.java:144)
+	at com.nia.helper.ResourceManager.copyFilesfromRemoteDir(ResourceManager.java:129)
+	at com.nia.main.Filecopyciti.copyFileFromRemoteDir(Filecopyciti.java:53)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:88)

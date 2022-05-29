@@ -1,0 +1,71 @@
+div.lgnprf h3.signedusername{ font-size: 16px; }
+div.lgnprf ul li{background-color: #ededed; }
+.lgnprf ul li{float: right; padding: 17px 0 !important; width: 50%;}
+.pointer-cursor{cursor:pointer;}
+.update .pop { width: 500px; }
+.list-inline.clearfix > li {    border-radius: 6px; height: 31px; }
+.boxbodysec > p { margin-top: -15px; }
+label.error{color:red;}
+#docUploadForm .error { padding-left: 15px;}
+#docSearchForm .error { padding-left: 15px;}
+.radio_error {clear: both; display: block; margin-left: 15px; }
+.error{color:red;}
+.error .popover-content{color:red;}
+.txt_border{border:1px solid red;}
+.blue_bca{	color:#428bca; }
+.btn.btn-blue.grey { background-color: #7799bd; }
+.date_box .error {
+    margin: 42px 0 0 -365px;
+    position: absolute;
+}
+
+
+.loading_ajax {
+    background: rgba(148, 148, 148, 0.8); 
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.loading_ajax img{display: block;
+    margin: 0 auto;}
+    
+    
+.loading_ajax_div {
+    display: block;
+    height: 50%;
+}
+.table_style
+{
+	background:#3399FF;
+}
+.table_style1 {
+	background:#004B7C none repeat scroll 0 0;
+	padding:5px 20px;
+	 color: #fff;
+	
+}
+.table_style2 {
+	
+	padding:5px 20px;
+	
+	
+}
+
+.table_wrapper{
+	
+	border:2px solid grey;
+}
+tr:nth-child(even){background-color: #fff}
+
+ tr:nth-child(odd){background-color: #CDD8E0;} 
+ 
+ .width > img {
+    width: 295px;
+}
+.width7 > p {
+    margin-top: 0;
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:config xmlns:tns="http://www.example.org/config_schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/config_schema config_schema.xsd ">
+  <tns:email_prop>
+    <tns:sender_email_adddress>of.support@newindia.co.in</tns:sender_email_adddress>
+    <tns:mail_from>of.support@newindia.co.in</tns:mail_from>
+    <tns:password>Oracle@123</tns:password>
+    <tns:successMail_recipientList>zainab.kanchwala@tcs.com</tns:successMail_recipientList>
+    <tns:errorMail_ReceipentList>zainab.kanchwala@tcs.com</tns:errorMail_ReceipentList>
+    <tns:success_subject>SFTP File Upload/Download Info as of</tns:success_subject>
+    <tns:error_subject>SFTP exception occured on </tns:error_subject>
+    <tns:smtp_host>10.20.25.39</tns:smtp_host>
+    <tns:smtp_port>25</tns:smtp_port>
+    <tns:smtp_auth>true</tns:smtp_auth>
+    <tns:debug>false</tns:debug>
+    <tns:smtp_ssl_enable>false</tns:smtp_ssl_enable>
+    <tns:message_body></tns:message_body>
+    <tns:message_signature> CWISS-Oracle Finance Support Team
+    IP :100067, Landline : 022-22708311
+    Email: of.support@newindia.co.in</tns:message_signature>
+  </tns:email_prop>
+  <tns:fcopy_prop>
+    <tns:fcopy_source>
+      <tns:s_path>/NIAFTP</tns:s_path>
+      <tns:s_fname></tns:s_fname>
+      <tns:s_ip>10.90.94.51</tns:s_ip>
+      <tns:s_port>22</tns:s_port>
+      <tns:s_username>ofsftp</tns:s_username>
+      <tns:s_password>New@1234</tns:s_password>
+      <tns:del_source_file>false</tns:del_source_file>
+     
+      <tns:s_prefix>
+        <tns:f_type>Citi Reverse File</tns:f_type>
+        <tns:f_prefix>TestFiles</tns:f_prefix>
+      </tns:s_prefix>
+      <tns:s_prefix>
+        <tns:f_type>Citi Reject or  Return File</tns:f_type>
+        <tns:f_prefix>t123</tns:f_prefix>
+      </tns:s_prefix>
+      <tns:retry_attempts>2</tns:retry_attempts>
+    </tns:fcopy_source>
+    <tns:fcopy_target>
+      <tns:t_path>D:\\Workspace_Citibank</tns:t_path>
+      <tns:t_fname></tns:t_fname>
+      <tns:t_ip></tns:t_ip>
+      <tns:t_port>0</tns:t_port>
+      <tns:t_username></tns:t_username>
+      <tns:t_password></tns:t_password>
+    </tns:fcopy_target>
+  </tns:fcopy_prop>
+  
+  <tns:fdecrypt_prop>
+  	<tns:shFile_Path>/NIAFTP/Application/SMIMETool/run/</tns:shFile_Path>
+    <tns:plainFile_Path>/NIAFTP/inbound_B/</tns:plainFile_Path>
+    <tns:plainFileBackup_Path>/NIAFTP/Backup/inbound_B_backup</tns:plainFileBackup_Path>
+    <tns:encryptedFile_Path>/NIAFTP/inbound_A/</tns:encryptedFile_Path>
+    <tns:encryptedFileBackup_Path>/NIAFTP/Backup/inbound_A_backup</tns:encryptedFileBackup_Path>
+     <tns:inputFile_Path>D:\\Workspace_SFTP\\inbound_utility\\outbound_daily_info.log</tns:inputFile_Path>
+  </tns:fdecrypt_prop>
+</tns:config>

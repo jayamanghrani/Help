@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="DocStoreWebComp">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="DocStoreUtil-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/DocStoreUtil/DocStoreUtil">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="DocStoreConfigUtil-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/DocStoreConfigUtil/DocStoreConfigUtil">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="DocStoreController-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/DocStoreController/DocStoreController">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="DocStoreComponentInvoker-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/DocStoreComponentInvoker/DocStoreComponentInvoker">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="DocStoreCache-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/DocStoreCache/DocStoreCache">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="DocStorePersist-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/DocStorePersist/DocStorePersist">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="DocStoreTransformation-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/DocStoreTransformation/DocStoreTransformation">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="DocStoreServiceObjects-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/DocStoreServiceObjects/DocStoreServiceObjects">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="DocStoreASBO-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/DocStoreASBO/DocStoreASBO">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="DocStoreCommons-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/DocStoreCommons/DocStoreCommons">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="DocStoreAccessManager-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/DocStoreAccessManager/DocStoreAccessManager">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="DocStoreWebComp"/>
+        <property name="java-output-path" value="/DocStoreWebComp/target/classes"/>
+    </wb-module>
+</project-modules>

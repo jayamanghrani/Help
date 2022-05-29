@@ -1,0 +1,7 @@
+2015-08-27 16:14:31 DEBUG Filecopyciti:36 - Utility started at :: 16:14:31
+2015-08-27 16:14:32 DEBUG Filecopyciti:92 -  File Copy Complete in  :0 Sec. with Result:true
+2015-08-27 16:14:54 ERROR Filecopyciti:157 - Exception Occured :: Error Message -Mail not sent
+2015-08-27 16:14:54 ERROR Filecopyciti:158 -  Sftp_fname_dao_Exception::
+com.nia.jpa.exception.Mail_Exception: Mail not sent
+	at com.nia.helper.ResourceManager.sendMailOnSuccess(ResourceManager.java:252)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:116)

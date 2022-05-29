@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE sqlMap      
+          PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+          "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+          
+          
+<sqlMap namespace="ClaimOutstandingRegister">
+
+<typeAlias alias="ClaimOutstandingRegisterDetails" type="reports.vo.ClaimOutstandingRegisterVO"/> 
+
+    
+<select id="ClaimOutstandingRegisterDetails"   resultClass="ClaimOutstandingRegisterDetails" parameterClass="java.util.HashMap">     
+        <![CDATA[ 
+            select nl.nature_of_loss_desc                        as NOLDESC,
+            c.status                                            as STATUS,
+            srvd.dev_officer_name                               as OFFICERNAME,
+            substr(att.atn_voucher_number,1,6)                   as OFFICECODE,
+            pd.sum_insured                                      as SUMINSURED,
+            c.estimated_amount                                  as ESTIMATEDLOSS,
+            p.policy_number                                     as POLICYNUMBER,
+            srvd.policy_holder_name                             as INSUREDNAME,
+            srvd.dev_officer_code                               as OFFICERCODE,
+            c.claim_number                                      as CLAIMNUMBER,
+            c.branch                                            as PROCESSINGBRANCH,
+            pd.effective_start_date                             as EFFECTIVESTARTDATE,
+            pd.policy_expiry_date                               as POLICYEXPIRYDATE,
+            c.registration_date                                 as REGISTRATIONDATE,
+            c.intimation_date                                      as INTIMATIONDATE,
+            c.loss_date                                         as LOSSDATE,
+            count(att.atn_voucher_number)                       as NUMBEROFTRANSACTION,
+            sum(atd.ATD_CREDIT_AMOUNT -  atd.ATD_DEBIT_AMOUNT)  as AMOUNT,
+            case when  EXTRACT(month FROM c.intimation_date) > '3'  then  concat(concat(EXTRACT(year FROM c.intimation_date), '-'),EXTRACT(year FROM c.intimation_date)+1)
+               else concat(concat(EXTRACT(year FROM c.intimation_date)-1, '-'),EXTRACT(year FROM c.intimation_date))
+                end  as FISCAL
+            from 
+            ods.accounting_transaction att,
+            ods.accounting_trn_detail atd,
+            ods.account aa,
+            ods.account bb,
+            ods.claim c,
+            ods.policy p,
+            ods.policy_detail_prd_tab pd,
+            ods.stakeholder_rltn_view_decomp srvd,
+            ods.nature_of_loss nl
+            where 
+            att.ATN_ACCOUNTING_TRANSACTION_ID = atd.ATN_ACCOUNTING_TRANSACTION_ID
+            and atd.ACC_ACCOUNT_ID = aa.ACC_ACCOUNT_ID
+            and aa.ACC_ACC_ACCOUNT_ID = bb.ACC_ACCOUNT_ID
+            and bb.ACC_ACCOUNT_TYPE ='5383'
+            ]]>
+        <isNotEqual prepend="AND" property="dept" compareValue="All">                    
+             aa.acc_department_code = #dept# 
+        </isNotEqual>
+        <![CDATA[  
+            and att.claim_id = c.claim_id
+            and c.policy_id = p.policy_id
+            and p.policy_id = pd.policy_id
+            and p.policy_id = srvd.policy_id
+            and c.nature_of_loss_id = nl.nature_of_loss_id
+            and substr(att.atn_voucher_number,1,6) = #officeCode#
+            and trunc(att.atn_transaction_date) <= to_date('$endDate$','DD-MM-YYYY') 
+            group by 
+            substr(att.atn_voucher_number,1,6),
+            c.claim_number,
+            c.branch,
+            pd.effective_start_date,
+            pd.policy_expiry_date,
+            c.registration_date,
+            c.intimation_date,
+            c.loss_date,
+            pd.sum_insured,
+            c.estimated_amount,
+            p.policy_number,
+            srvd.policy_holder_name,
+            srvd.dev_officer_code,
+            srvd.dev_officer_name,
+            c.status,
+            nl.nature_of_loss_desc
+            having sum(atd.ATD_CREDIT_AMOUNT -  atd.ATD_DEBIT_AMOUNT) <> 0
+              ]]>
+            <isNotEqual prepend="AND" property="amtMoreThan" compareValue="">                    
+                <![CDATA[     sum(atd.ATD_CREDIT_AMOUNT -  atd.ATD_DEBIT_AMOUNT) >= #amtMoreThan# ]]>
+            </isNotEqual>
+             <isNotEqual prepend="AND" property="amtLessThan" compareValue="">                    
+                <![CDATA[     sum(atd.ATD_CREDIT_AMOUNT -  atd.ATD_DEBIT_AMOUNT) <= #amtLessThan# ]]>
+            </isNotEqual>
+        <![CDATA[     
+            order by c.intimation_date,
+            substr(att.atn_voucher_number,1,6),
+            c.claim_number 
+         ]]> 
+
+ </select>
+      
+</sqlMap>

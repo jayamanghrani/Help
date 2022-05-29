@@ -1,0 +1,155 @@
+2016-09-12 12:25:07 DEBUG Filecopyciti:36 - Utility started at :: 12:25:7
+2016-09-12 12:37:42 DEBUG Filecopyciti:36 - Utility started at :: 12:37:42
+2016-09-12 12:39:26 DEBUG Filecopyciti:36 - Utility started at :: 12:39:25
+2016-09-12 12:42:54 INFO  SftpUtility:241 - Downloading file::NIA_REV_20150812.out
+2016-09-12 12:43:00 ERROR SftpUtility:308 - SFTPException Cause::
+4: 
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:979)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:873)
+	at com.nia.helper.SftpUtility.copyFileFromInboundBToOF(SftpUtility.java:243)
+	at com.nia.helper.ResourceManager.copyFileFromInboundBToOF(ResourceManager.java:469)
+	at com.nia.main.Filecopyciti.copyFileFromInboundBToOF(Filecopyciti.java:197)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:119)
+Caused by: java.io.FileNotFoundException: D:\Workspace_SFTP\inbound_utility\ofsftp\HPCL_Testing (The system cannot find the path specified)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:955)
+	... 5 more
+2016-09-12 12:48:51 INFO  SftpUtility:198 - Retry attemt number::1
+2016-09-12 12:48:51 INFO  SftpUtility:241 - Downloading file::NIA_REV_20150812.out
+2016-09-12 12:48:51 ERROR SftpUtility:308 - SFTPException Cause::
+4: 
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:979)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:873)
+	at com.nia.helper.SftpUtility.copyFileFromInboundBToOF(SftpUtility.java:243)
+	at com.nia.helper.SftpUtility.copyFileFromInboundBToOF(SftpUtility.java:313)
+	at com.nia.helper.ResourceManager.copyFileFromInboundBToOF(ResourceManager.java:469)
+	at com.nia.main.Filecopyciti.copyFileFromInboundBToOF(Filecopyciti.java:197)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:119)
+Caused by: java.io.FileNotFoundException: D:\Workspace_SFTP\inbound_utility\ofsftp\HPCL_Testing (The system cannot find the path specified)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:955)
+	... 6 more
+2016-09-12 12:48:54 INFO  SftpUtility:198 - Retry attemt number::2
+2016-09-12 12:48:56 INFO  SftpUtility:241 - Downloading file::NIA_REV_20150812.out
+2016-09-12 12:48:56 ERROR SftpUtility:308 - SFTPException Cause::
+4: 
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:979)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:873)
+	at com.nia.helper.SftpUtility.copyFileFromInboundBToOF(SftpUtility.java:243)
+	at com.nia.helper.SftpUtility.copyFileFromInboundBToOF(SftpUtility.java:313)
+	at com.nia.helper.SftpUtility.copyFileFromInboundBToOF(SftpUtility.java:313)
+	at com.nia.helper.ResourceManager.copyFileFromInboundBToOF(ResourceManager.java:469)
+	at com.nia.main.Filecopyciti.copyFileFromInboundBToOF(Filecopyciti.java:197)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:119)
+Caused by: java.io.FileNotFoundException: D:\Workspace_SFTP\inbound_utility\ofsftp\HPCL_Testing (The system cannot find the path specified)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:955)
+	... 7 more
+2016-09-12 12:49:02 ERROR Email_Sender:213 - MessagingException Exception535 authorization failed
+
+javax.mail.AuthenticationFailedException: 535 authorization failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.nia.helper.Email_Sender.sendEmail(Email_Sender.java:204)
+	at com.nia.helper.ResourceManager.sendMailOnError(ResourceManager.java:434)
+	at com.nia.jpa.exception.FilecopytoRemote_Exception.<init>(FilecopytoRemote_Exception.java:20)
+	at com.nia.helper.ResourceManager.copyFileFromInboundBToOF(ResourceManager.java:476)
+	at com.nia.main.Filecopyciti.copyFileFromInboundBToOF(Filecopyciti.java:197)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:119)
+2016-09-12 12:49:02 ERROR Filecopyciti:165 - Exception Occured :: Error Message -File transfer from CITI Server to Location:/ofsftp/HPCL_Testing on NIA SFTP server failed. 
+Please check the log file for more details on error.
+
+
+2016-09-12 12:49:02 ERROR Filecopyciti:166 -  FilecopytoRemote_Exception::
+com.nia.jpa.exception.FilecopytoRemote_Exception: File transfer from CITI Server to Location:/ofsftp/HPCL_Testing on NIA SFTP server failed. 
+Please check the log file for more details on error.
+
+
+	at com.nia.helper.ResourceManager.copyFileFromInboundBToOF(ResourceManager.java:476)
+	at com.nia.main.Filecopyciti.copyFileFromInboundBToOF(Filecopyciti.java:197)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:119)
+2016-09-12 13:03:22 DEBUG Filecopyciti:36 - Utility started at :: 13:3:22
+2016-09-12 13:05:04 ERROR SftpUtility:308 - SFTPException Cause::
+4: not supported to get directory /ofsftp/HPCL_Testing/.
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:915)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:873)
+	at com.nia.helper.SftpUtility.copyFileFromInboundBToOF(SftpUtility.java:267)
+	at com.nia.helper.ResourceManager.copyFileFromInboundBToOF(ResourceManager.java:469)
+	at com.nia.main.Filecopyciti.copyFileFromInboundBToOF(Filecopyciti.java:199)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:119)
+2016-09-12 13:07:16 INFO  SftpUtility:198 - Retry attemt number::1
+2016-09-12 13:19:33 DEBUG Filecopyciti:36 - Utility started at :: 13:19:33
+2016-09-12 13:19:36 ERROR SftpUtility:308 - SFTPException Cause::
+4: not supported to get directory /ofsftp/HPCL_Testing/.
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:915)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:873)
+	at com.nia.helper.SftpUtility.copyFileFromInboundBToOF(SftpUtility.java:267)
+	at com.nia.helper.ResourceManager.copyFileFromInboundBToOF(ResourceManager.java:469)
+	at com.nia.main.Filecopyciti.copyFileFromInboundBToOF(Filecopyciti.java:199)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:119)
+2016-09-12 13:19:36 INFO  SftpUtility:198 - Retry attemt number::1
+2016-09-12 13:19:37 ERROR SftpUtility:308 - SFTPException Cause::
+4: not supported to get directory /ofsftp/HPCL_Testing/.
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:915)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:873)
+	at com.nia.helper.SftpUtility.copyFileFromInboundBToOF(SftpUtility.java:267)
+	at com.nia.helper.SftpUtility.copyFileFromInboundBToOF(SftpUtility.java:313)
+	at com.nia.helper.ResourceManager.copyFileFromInboundBToOF(ResourceManager.java:469)
+	at com.nia.main.Filecopyciti.copyFileFromInboundBToOF(Filecopyciti.java:199)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:119)
+2016-09-12 13:19:37 INFO  SftpUtility:198 - Retry attemt number::2
+2016-09-12 13:19:38 ERROR SftpUtility:308 - SFTPException Cause::
+4: not supported to get directory /ofsftp/HPCL_Testing/.
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:915)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:873)
+	at com.nia.helper.SftpUtility.copyFileFromInboundBToOF(SftpUtility.java:267)
+	at com.nia.helper.SftpUtility.copyFileFromInboundBToOF(SftpUtility.java:313)
+	at com.nia.helper.SftpUtility.copyFileFromInboundBToOF(SftpUtility.java:313)
+	at com.nia.helper.ResourceManager.copyFileFromInboundBToOF(ResourceManager.java:469)
+	at com.nia.main.Filecopyciti.copyFileFromInboundBToOF(Filecopyciti.java:199)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:119)
+2016-09-12 13:19:43 ERROR Email_Sender:213 - MessagingException Exception535 authorization failed
+
+javax.mail.AuthenticationFailedException: 535 authorization failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.nia.helper.Email_Sender.sendEmail(Email_Sender.java:204)
+	at com.nia.helper.ResourceManager.sendMailOnError(ResourceManager.java:434)
+	at com.nia.jpa.exception.FilecopytoRemote_Exception.<init>(FilecopytoRemote_Exception.java:20)
+	at com.nia.helper.ResourceManager.copyFileFromInboundBToOF(ResourceManager.java:476)
+	at com.nia.main.Filecopyciti.copyFileFromInboundBToOF(Filecopyciti.java:199)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:119)
+2016-09-12 13:19:43 ERROR Filecopyciti:167 - Exception Occured :: Error Message -File transfer from SFTP Server to Location:/ofsftp/HPCL_Testing on NIA OF server failed. 
+Please check the log file for more details on error.
+
+
+2016-09-12 13:19:43 ERROR Filecopyciti:168 -  FilecopytoRemote_Exception::
+com.nia.jpa.exception.FilecopytoRemote_Exception: File transfer from SFTP Server to Location:/ofsftp/HPCL_Testing on NIA OF server failed. 
+Please check the log file for more details on error.
+
+
+	at com.nia.helper.ResourceManager.copyFileFromInboundBToOF(ResourceManager.java:476)
+	at com.nia.main.Filecopyciti.copyFileFromInboundBToOF(Filecopyciti.java:199)
+	at com.nia.main.Filecopyciti.main(Filecopyciti.java:119)
+2016-09-12 17:42:28 DEBUG Filecopyciti:36 - Utility started at :: 17:42:27
+2016-09-12 17:43:22 DEBUG Filecopyciti:36 - Utility started at :: 17:43:22

@@ -1,0 +1,31 @@
+/*package com.tcs.docstore.test;
+
+import java.util.List;
+import java.util.concurrent.ConcurrentMap;
+
+import com.tcs.docstore.db.asbo.request.TickerDBRequestASBO;
+import com.tcs.docstore.service.ticker.TickerCacheService;
+
+public class TestCacheTicker {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("inside the main method of the TestCacheTicker ");
+		TickerDBRequestASBO tdbrasbo = new TickerDBRequestASBO();
+		tdbrasbo.setTickerinput("tickerinout");
+	//	TickerCacheService tcs = new TickerCacheService();
+	//	ConcurrentMap<String, List<String>> cacheingGenerinccachedlist = tcs.cacheTickerValues(tdbrasbo);		
+		ConcurrentMap<String, List<String>> cacheingnewGenerinc = TickerCacheService.cacheingGenerinc;
+		if (cacheingnewGenerinc.get(tdbrasbo.getTickerinput())!= null)
+			{
+			System.out.println("caching implemented");
+		}
+		else{
+			
+			System.out.println("caching not implemented");
+		}
+
+	}
+
+}
+*/

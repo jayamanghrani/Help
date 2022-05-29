@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.tcs.webreports</groupId>
+    <artifactId>WebReports-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>WebReportsTransformation</artifactId>
+   <dependencies>
+		<dependency>
+			<groupId>com.tcs.webreports</groupId>
+			<artifactId>WebReportsServiceObjects</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tcs.webreports</groupId>
+			<artifactId>WebReportsASBO</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>wsdl</groupId>
+			<artifactId>wsdl</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tcs.webreports</groupId>
+			<artifactId>WebReportsConfigUtil</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tcs.webreports</groupId>
+			<artifactId>WebReportsCache</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tcs.webreports</groupId>
+			<artifactId>WebReportsUtil</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+   </dependencies>
+</project>

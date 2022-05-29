@@ -1,0 +1,19 @@
+2015-05-19 18:27:56 ERROR Filecopy_of:92 -  SQLException Exception: IO Error: Socket read timed out
+java.sql.SQLRecoverableException: IO Error: Socket read timed out
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:489)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:553)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:254)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:528)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.nia.helper.ResourceManager.getConnection(ResourceManager.java:178)
+	at com.nia.main.Filecopy_of.getFileName(Filecopy_of.java:51)
+	at com.nia.main.Filecopy_of.main(Filecopy_of.java:68)
+Caused by: oracle.net.ns.NetException: Socket read timed out
+	at oracle.net.ns.Packet.receive(Packet.java:347)
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:300)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1140)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340)
+	... 9 more
+2015-05-19 18:30:06 DEBUG Filecopy_of:80 -  File Copy Complete in  :112 Sec. with Result:true

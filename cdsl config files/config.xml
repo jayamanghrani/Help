@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:config xmlns:tns="http://www.example.org/config_schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/config_schema config_schema.xsd ">
+  <tns:email_prop>
+    <tns:sender_email_adddress>of.support@newindia.co.in</tns:sender_email_adddress>
+    <tns:mail_from>orafin.support@newindia.co.in</tns:mail_from>
+    <tns:password>Cisco$1234</tns:password>
+    <tns:Receipent_list>sftp.support@newindia.co.in</tns:Receipent_list>
+    <tns:message_subject>Error in SFTP of Report payment file transfer</tns:message_subject>
+    <tns:smtp_host>mailhost.newindia.co.in</tns:smtp_host>
+    <tns:smtp_port>25</tns:smtp_port>
+    <tns:smtp_auth>true</tns:smtp_auth>
+    <tns:debug>false</tns:debug>
+    <tns:smtp_ssl_enable>false</tns:smtp_ssl_enable>
+    <tns:message_body></tns:message_body>
+    <tns:message_signature>CWISS-Oracle Finance Support Team,
+IP :100067, Landline : 022-22708311
+Email: of.support@newindia.co.in</tns:message_signature>
+  </tns:email_prop>
+   <tns:db_prop>
+    <tns:driver></tns:driver>
+    <tns:server_ip></tns:server_ip>
+    <tns:port></tns:port>
+    <tns:schema_name></tns:schema_name>
+    <tns:username></tns:username>
+    <tns:password></tns:password>
+  </tns:db_prop>
+  <tns:fcopy_prop>
+    <tns:fcopy_source>
+      <tns:s_path>/PNBSFTP/Backup/Test</tns:s_path> 
+      <tns:s_fname></tns:s_fname>
+      <tns:del_source_file>false</tns:del_source_file>
+      <tns:retry_attempts>6</tns:retry_attempts>
+    </tns:fcopy_source>
+    <tns:fcopy_target> 
+      <tns:t_path>/</tns:t_path>
+      <tns:t_fname>null</tns:t_fname>
+      <tns:t_ip>61.95.148.22</tns:t_ip>
+      <tns:t_port>22</tns:t_port>
+      <tns:t_username>NIA</tns:t_username>
+      <tns:t_password>Sep_2017</tns:t_password>
+    </tns:fcopy_target>
+  </tns:fcopy_prop>
+  
+  <tns:fencrypt_prop>
+    <tns:shFile_Path></tns:shFile_Path>
+    <tns:plainFile_Path></tns:plainFile_Path>
+    <tns:plainFileBackup_Path></tns:plainFileBackup_Path>
+    <tns:encryptedFile_Path></tns:encryptedFile_Path>
+    <tns:encryptedFileBackup_Path></tns:encryptedFileBackup_Path>
+    
+  </tns:fencrypt_prop>
+  
+</tns:config>

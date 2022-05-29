@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1- strict.dtd"> 
+
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+<meta name="robots" content="noodp,noydir" /> 
+<style>
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+
+div {
+    border: 1px  black;
+   
+}
+
+div.ex1 {
+    padding: 25px 50px 75px 100px;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+ /* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+} 
+</style>
+</head>
+
+<body style="text-align:center">
+<div id="content" class="ex1">
+<h2><font size="5">Information Security (IS) Policy Undertaking</font> </h2>
+<!-- <div id="details" align="center"> </div> -->
+
+<h4 id="name" align="center" style="color:blue;" font color="red"></h4>
+<h4 id="serialNo" align="center" style="color:blue;" font color="red"></h4>
+<h4 id="officeCode" align="center" style="color:blue;" font color="red"></h4>
+
+<p align="left">I have read & understood New India's Acceptable Usage Policy.  I recognize and understand
+that the New India's information systems are to be used for conducting the Company's business
+only.  I understand that use of this facility for private is strictly prohibited, except when expressly
+permitted.</p>
+</br>
+
+<p align="left">I am aware that company may access & review any materials created, stored, sent or received by me
+through the company network.</p>
+</br>
+
+<p align="left">I have read the Information Security Policy & applicable procedures and agree to follow the
+same.  I further agree to abide by the standards set in the document for the duration of my 
+employment/association with the Company.</p>
+</br>
+
+<p align="left">I acknowledge the possession of Information resources belonging to NIA and will protect these
+information resources from unauthorized activities including disclosure, modification, deletion
+and improper usage.  I understand that my responsibility to protect information confidential to 
+NIA continues to extend even after my separation from the company.</p>
+</br>
+
+<p align="left">I am aware that violations of it may subject me to disciplinary action, up to and including
+discharge from employment and any legal action in case of illegal acts that may be initiated
+by the company during my employment/association with the Company.</p>
+</br>
+
+<p align="left">Furthermore I understand that this policy and document can be amended at any time and I hereby
+agree to keep myself updated and abide by the revised policy and procedure as long as I continue to be
+the user of the Company's Information Systems.</p>
+<br></br>
+<!-- </div>  -->
+<div id="editor"></div>
+
+<input type="checkbox" id="checkme"/>I Agree
+<br></br>
+
+<!-- <input class="btn btn-blue grey"  type="submit"  value="Click Here to Continue" name="Submit" id="continue" onclick="loadNewDoc()"/> -->
+<div class="clearfix">
+<input class="btn btn-blue grey" type="submit" name="save" id="cmd" disabled="disabled" value=" Save And Submit" />
+  </div>
+  
+  
+  <br>
+ <p align="left">______________</p>
+  <h4 id="sign" align="left">Signature</h4>
+  <h4 id="date" align="left"></h4>
+  </div>
+ 
+ 
+
+<script type="text/javascript" src="assets/private/js/jquery-2.1.3.js" ></script>
+<script type="text/javascript" src="assets/private/js/jquery-migrate-1.0.0.js" ></script>
+<script type="text/javascript" src="assets/private/js/jquery-ui.min.js" ></script>
+<script type="text/javascript" src="assets/private/js/moment.js" ></script>
+<script type="text/javascript" src="assets/private/js/jspdf.debug.js" ></script>
+<script type="text/javascript" src="assets/private/js/html2canvas.js" ></script>
+<script type="text/javascript" src="assets/private/js/jspdf.min1.js" ></script>
+<script type="text/javascript" src="assets/private/js/config.js"></script>
+<script type="text/javascript" src="assets/private/js/portal.js"></script>
+
+<!---------------------------------------------------------SCRIPT FILES--------------------------------------------------->
+		<!---------------------------------------------------------STYLE FILES---------------------------------------------------->	
+		<link rel="stylesheet" type="text/css" href="assets/private/css/jquery-ui.css" >
+		<link rel="stylesheet" type="text/css" href="assets/private/css/carousel.css" >
+		<link rel="stylesheet" type="text/css" href="assets/private/css/emp2.css" >
+		<link rel="stylesheet" type="text/css" href="assets/private/css/chn.css" >
+		
+		<!---------------------------------------------------------STYLE FILES---------------------------------------------------->			
+		<!-- Fav and touch icons -->
+		<style type="text/css">
+			.employee li a{
+			color:#FFF;
+			}
+			
+			
+		</style>
+
+
+
+
+
+<script type="text/javascript">
+		var responseData;
+		$( document ).ready(function() {
+			$.fn.getDetailsCallDisplay();
+		});
+	</script>
+ 
+ 
+ <script type="text/javascript">
+$('#cmd').click(function () 
+ {
+$.ajax({
+	type: "POST",
+	url:getuserInsertURL,
+	dataType: "json",
+	contentType: "application/json",
+
+	data: {},
+	success: function (data)
+	{
+
+
+		webserviceResponse=data;
+
+
+		if(webserviceResponse.status=="Submited Successfully")
+			{
+			alert(webserviceResponse.status);
+			
+			
+			$("#cmd").attr("disabled", "disabled");
+			 $('#cmd').addClass( "grey" );
+		
+		
+		var doc = new jsPDF();
+		doc.setFontType("italic");
+
+		var specialElementHandlers = {
+			    '#editor': function (element, renderer) {
+			        return true;
+			    }
+			};
+			 doc.fromHTML($('#content').html(), 30, 20,{
+					'width': 150,
+			            'elementHandlers': specialElementHandlers
+			            });
+			    doc.save('InfoPolicy.pdf');
+			  
+			   
+			    window.location.replace("/EmployeePortalNIA/home.html"); 
+			}
+		else
+			{
+			alert(webserviceResponse.status);
+			}
+			},
+	error: function() {
+		//alert("Failure in notification Webservice");
+	}
+});
+
+
+});
+</script> 
+
+<script>
+//NEW CHANGES
+var checker = document.getElementById('checkme');
+var sendbtn = document.getElementById('cmd');
+checker.onchange = function(){
+if(this.checked){
+	
+	sendbtn.disabled = false;
+	$('#cmd').removeClass( "grey" );
+}else
+	{
+	sendbtn.disabled = true;
+	$('#cmd').addClass( "grey" );
+	}
+}
+</script>  
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="UmsOSBIntegrationWebComp">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="UmsOSBIntegrationServiceObject-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/UmsOSBIntegrationServiceObject/UmsOSBIntegrationServiceObject">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="UmsOSBIntegrationASBO-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/UmsOSBIntegrationASBO/UmsOSBIntegrationASBO">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="UmsOSBIntegrationController-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/UmsOSBIntegrationController/UmsOSBIntegrationController">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="UmsOSBIntegrationPersist-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/UmsOSBIntegrationPersist/UmsOSBIntegrationPersist">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="UmsOSBIntegrationCommons-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/UmsOSBIntegrationCommons/UmsOSBIntegrationCommons">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="UmsOSBIntegrationWebComp"/>
+        <property name="java-output-path" value="/UmsOSBIntegrationWebComp/target/classes"/>
+    </wb-module>
+</project-modules>

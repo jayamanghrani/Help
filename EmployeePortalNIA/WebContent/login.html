@@ -1,0 +1,607 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1"/>
+		<title> Home : The New India Assurance Co. Ltd.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!---------------------------------------------------------SCRIPT FILES--------------------------------------------------->
+		<script type="text/javascript" src="assets/public/js/config.js"></script>
+		<script type="text/javascript" src="assets/public/js/jquery-1.11.3.min.js" ></script>
+		<script type="text/javascript" src="assets/public/js/jquery-migrate-1.0.0.js" ></script>
+		<script type="text/javascript" src="assets/public/js/jquery-ui.min.js" ></script>
+		<script type="text/javascript" src="assets/public/js/config.js"></script>
+		<script type="text/javascript" src="assets/public/js/jquery.validate.js"></script>
+		<script type="text/javascript" src="assets/public/js/jquery.flexslider.js"></script>
+		<script type="text/javascript" src="assets/public/js/jquery.placeholder.js"></script>
+		<script type="text/javascript" src="assets/public/js/moment.js"></script>
+		<!---------------------------------------------------------SCRIPT FILES--------------------------------------------------->
+		<!---------------------------------------------------------STYLE  FILES---------------------------------------------------->	
+		<link rel="stylesheet" type="text/css" href="assets/public/css/jquery-ui.css" >
+		<link rel="stylesheet" type="text/css" href="assets/public/css/carousel.css" >
+		<link rel="stylesheet" type="text/css" href="assets/public/css/emp2.css" >
+		<link rel="stylesheet" type="text/css" href="assets/public/css/flexslider.css" >
+		<link rel="stylesheet" type="text/css" href="assets/public/css/chn.css" >
+		<!---------------------------------------------------------STYLE FILES---------------------------------------------------->			   
+		<script type = "text/javascript" >
+			function getParameterByName(name, url) {
+				if (!url) url = window.location.href;
+				name = name.replace(/[\[\]]/g, "\\$&");
+				var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+				results = regex.exec(url);
+				if (!results) return null;
+				if (!results[2]) return '';
+				return decodeURIComponent(results[2].replace(/\+/g, " "));     
+			}			
+		</script>
+
+<script type = "text/javascript" >
+function resizeText(multiplier) {
+  if (document.body.style.fontSize == "") {
+    document.body.style.fontSize = "1.0em";
+  }
+     var x=document.body.style.fontSize;
+
+if(parseFloat(document.body.style.fontSize)<=0.8){
+	document.getElementById("myBtn").style.pointerEvents="none";
+		document.getElementById("myBtn").style.color="grey";
+}
+
+ else if(parseFloat(document.body.style.fontSize)>=1.2){
+ 	document.getElementById("myBtn1").style.pointerEvents="none";
+		document.getElementById("myBtn1").style.color="grey";
+ 	
+ }
+ 
+ 	document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+ 	if(parseFloat(document.body.style.fontSize)>=0.8){
+ 		document.getElementById("myBtn").style.pointerEvents="auto";
+		document.getElementById("myBtn").style.color="#428bca";
+ 	}
+ 	if(parseFloat(document.body.style.fontSize)<=1.2){
+ 		document.getElementById("myBtn1").style.pointerEvents="auto";
+		document.getElementById("myBtn1").style.color="#428bca";
+ 	}
+ 
+}
+		  </script>
+		  <script type = "text/javascript" >
+        window.history.forward();
+  function preventBack() { window.history.forward(1);
+        }
+
+        </script>
+        <script>
+window.location.hash="no-back-button";
+window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+window.onhashchange=function(){window.location.hash="no-back-button";}
+</script>
+
+	</head>
+	<body  onload="preventBack();" onpageshow="if (event.persisted) preventBack();" onunload="">
+		<!--we can use single controller for the whole page  or we can use individual controller for each sub container as show in the structure-->
+		<div class="empcontainer">
+			<!--header section starts below -->
+			<div class="row clearfix">
+				<!--we use the ng-model for the bidding of data from controller to view-->
+				<div class="width5 column headermbl">
+					<div class="page-header">
+						<img class="img-logo" src="assets/public/img/logo.png">
+					</div>
+				</div>
+				<!--top breadcrumbs starts below-->
+				<div class="width7  brdcrumbmbl pull-right">
+					<ul class="breadcrumb text-right">
+						<li>
+							<span class="callus"></span>
+							<span class="mr-10 blue_bca">Toll Free 1800-209-1415</span>
+						</li>
+						<li class="divider">
+							|
+						</li>
+						<li>
+							<a id="myBtn" onclick="resizeText(-1)">A<sup>--</sup></a>
+						</li>
+						<li class="divider">
+							|
+						</li>
+						<li>
+							<a id="myBtn1" onclick="resizeText(+1)">A<sup>++</sup></a>
+						</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							</ul>
+						</li>
+					</ul>
+					<div class="quickrenewal text-right">
+					</div>
+				</div>
+				<!--top breadcrumbs ends above-->
+			</div>
+			<!--main nav starts below-->
+			<!--main nav ends above-->
+			<!--header section ends above -->
+			<div class="row clearfix rural">
+				<div class="width3">
+					<div class="employee">
+						<div class="headinfo">
+							<img src="assets/public/images/key2.png">
+							Employee Login
+						</div>
+						<form class="gap mb-10" name="loginForm" id="loginForm"  method="POST" autocomplete="off">
+							<div class="form-group">
+								<span id="loginErrorMsg" style="color:red"> </span>
+								<input type="text" id="username" name="username" placeholder="User Id" class="form-control usericon" maxlength="15">
+							</div>
+							<div class="form-group">
+								<input type="password" id="password" name="password" placeholder="Password" class="form-control passicon" maxlength="12" >
+							</div>
+							<div class="form-group">
+								<input type="hidden" id="request_id" name="request_id" placeholder="request_id" class="form-control passicon">
+							</div>
+							<div class="gap-top">
+								<button id="login_Submit_Button" name="login_Submit_Button" type="button" class="btn btn-grey btn-block lead-sm btn-blue">Login</button>
+							</div>
+							<div class="gap-top">
+								<label><a class=" text-success" href="#" id="forgotPwd" onclick="fpwdpop()">Forgot Password</a> </label>
+							</div>
+						</form>
+						<form name="forgotPwd_Form" id="forgotPwd_Form" method="POST">
+							<div class="pop_backdrop update">
+								<div class="pop">
+									<button onclick="closes()" aria-label="Close"  class="close" type="button">
+									<span aria-hidden="true">×</span>
+									</button>
+									<div class="poplabel text-white">
+										Forgot Password
+									</div>
+									<div class="clearfix ml-10">
+										<div class="clearfix mb-10 gap-top ">
+											<input type="text" class="form-control  inhlp" placeholder="User Id" maxlength="15" id="forgotPwd_Uname" name="forgotPwd_Uname">
+										</div>
+										<div class="clearfix mb-10 gap-top date ">
+											<input type="text" class="txtDat form-control inhlp" placeholder="Date of birth(dd/mm/yyyy)" id="forgotPwd_Dob" name="forgotPwd_Dob">
+										</div>
+										<div class="clearfix mb-10 text-center">
+											<input type="button" class="btn btn-blue btn-widths" id="forgotPwd_submit" value="Submit" />
+										</div>
+										<!--  <div class="clearfix">
+											<p>note:On submission of details, your password will be sent to you through an
+												e-mail</p>
+											</div>-->
+										<center>
+											<div id="passwordMessages"> </div>
+										</center>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class=" column boxes">
+						<div href="#collapseFour" data-parent="#accordion"  class="hdrbox"><img src="assets/public/img/whatsnew.png">Latest Updates<i class="caret"></i>
+						</div>
+						<div>
+							<div class="boxbodysec" id="latestUpdates">
+								<div class="text-blue text-underline datatest" id="latestUpdateNews" >
+								</div>
+								<a class="btn pull-right text-underline" id="viewAllLink" name="viewAllLink" >View All</a>
+							</div>
+							
+						</div>
+						<div class="pop_update">
+							<div class="pop">
+								<button onclick="close_update()" aria-label="Close"  class="close" type="button">
+								<span aria-hidden="true">×</span>
+								</button>
+								<div class="poplabel text-white">
+									Latest Updates
+								</div>
+								<div class="clearfix ml-10">
+									<div class="clearfix mb-10 gap-top" id="popUpMsg">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="width9">
+					<div class="flexslider">
+						<ul class="slides" id="flex_slider">
+						</ul>
+					</div>
+					<h3 class="text-blue">Welcome to CWISS- Centralised Web Based Insurance System Solution</h3>
+					<p>	New India is the first fully Indian owned insurance company in India. New India is a pioneer 
+						among the Indian Companies various fronts, right from insuring the first domestic airlines in
+						1946, to satellite insurance in 1990. New India is also a pioneer inusing cutting edge IT technology
+						to drive their business initiatives. 
+					</p>
+					<p>Customer can buy online insurance through portal <a class="underline">https://web.newindia.co.in</a></p>
+					
+					
+					
+				</div>
+			</div>
+			
+			<div class="desk clearfix">
+				
+<h3 class="text-blue text-center">Helpdesk Teams</h3>
+                    <div class="width3 help">
+                    <ul>
+                            <li class="strong">HRMS Support</li>
+                            <li>Email: <font color="#428BCA">hrms.support@newindia.co.in</font></li>
+                            <li>Landline:022-22626340/50</li>
+                            <li>VOIP:100995</li>
+                        </ul>
+                        
+                        
+                    </div>
+                    <div class="width4 help">
+                        <ul>
+                            <li class="strong">Core Insurance</li>
+                            <li>Email:<font color="#428BCA">core.support@newindia.co.in</font></li>
+                            <li>Landline:022-22020971/72</li>
+                            <li>VOIP:100901</li>
+                            
+                        </ul>
+                        
+                    </div>
+                    <div class="width4 help">
+                        <ul class="mt-10">
+                            <li class="strong">Reports</li>
+                            <li>Email:<font color="#428BCA">reports.support@newindia.co.in</font></li>
+                            <li>Landline:022-22708657</li>
+                            <li>VOIP:100889/100890</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="width4 help">
+                        <ul class="mt-10">
+                            <li class="strong">Oracle financials</li>
+                            <li>Email: <font color="#428BCA">of.support@newindia.co.in</font></li>
+                            <li>Landline:022-22020978</li>
+                            <li>VOIP:100067/100167</li>
+                        </ul>
+                        
+                        </div>
+                        
+                        <div class="width4 help">
+                        <ul class="mt-10">
+                            <li class="strong">Network/VPN</li>
+                            <li>Email: <font color="#428BCA">nia.helpdesk @newindia.co.in & vpn.support@newindia.co.in</font></li>
+                            <li>Landline:022- 22708541/392/329/240</li>
+                            <li>VOIP:100822-823-100399</li>
+                        </ul>
+                        
+                        </div>
+                        
+                        
+                        <div class="width4 help">
+                        <ul class="mt-10">
+                            <li class="strong">DMS</li>
+                            <li>Email: <font color="#428BCA">dms.support@newindia.co.in</font></li>
+                            <li>Landline:022-22708697/698</li>
+                            <li>VOIP:100900/907/908/909</li>
+                        </ul>
+                        
+                        </div>
+                        
+                        
+                        <div class="width4 help">
+                        <ul class="mt-10">
+                            <li class="strong">Email Support</li>
+                            <li>Email: <font color="#428BCA">email.support@newindia.co.in</font></li>
+                            <li>Landline:022-22708500</li>
+                            <li>VOIP:100888/955</li>
+                        </ul>
+                        
+                        </div>
+                        
+                        <div class="width4 help">
+                        <ul class="mt-10">
+                            <li class="strong">Online Applications</li>
+                            <li>Email: <font color="#428BCA">tech.support@newindia.co.in</font></li>
+                            <li>Landline:022-22041386</li>
+                            <li>VOIP:100903</li>
+                        </ul>
+                        
+                        </div>
+					</div>
+			<div class="row clearfix cpyrght mt-10 ">
+				
+				The New India Assurance Co.Ltd(IRDAI Regn.No-190). All Rights Reserved.|Regd.office:87,M.G.Road, Fort Mumbai 400001<br>
+				Site best viewed in IE-9 and Mozilla Firefox 38 onwards
+			</div>
+			<!--footer section ends above-->
+		</div>
+		
+		
+		<p class="loading_ajax" id="loading_ajax" style="display:none;">
+			<span class="loading_ajax_div">
+			</span>
+			<img src="assets/public/images/NIA_gif2.gif" />
+		</p>
+	</body>
+
+
+	<!---------------------------------------------------------SCRIPT FILES--------------------------------------------------->
+	<script type="text/javascript" src="assets/public/js/portal.js"></script>
+	<!---------------------------------------------------------SCRIPT FILES--------------------------------------------------->
+	
+<script type="text/javascript">
+var birthday;
+
+   $(document).ready(function() {
+	   
+    $('#forgotPwd_Dob').datepicker({
+    	changeMonth: true, 
+    	maxDate: '0',
+    	changeYear: true, 
+    	yearRange: '1940:'+(new Date).getFullYear(), 
+    	dateFormat: 'dd/mm/yy',
+    	defaultDate: '',
+    	onClose: validateDate,
+   
+       });
+    });
+</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+		
+		 RefreshSomeEventListener();
+
+		 function RefreshSomeEventListener() {
+		  $("#latestUpdateNews").on("click","a", function() {
+		    	$("#popUpMsg").empty();
+			    var clickedID = $(this).attr('id');
+		   		var clickedMsg = $(this).attr('name');
+		   		$("#popUpMsg").append('<p class="text-blue underline" >'+clickedMsg+'</p>');
+		   		$(".pop_update").show();
+		   		   		
+		});
+		}			 
+          $("#forgotPwd_submit").click(function(){
+	          $('#passwordMessages').empty();
+	          if($("#forgotPwd_Uname").val() == "" || $("#forgotPwd_Uname").val() == null || $("#forgotPwd_Dob").val() == "" || $("#forgotPwd_Dob").val() == null )
+	          {        	
+	        	var message="Please enter username and DOB";
+	        	$('#passwordMessages').append('<font color="red">'+message+'</font>');
+	        	
+	          }else{
+	        	  	$('#forgotPwd_submit').prop('disabled', true);
+	        	  	$('#forgotPwd_submit').addClass( "grey" );
+	                $.fn.forgotpwdCall();
+	          }
+          });
+    });
+    </script>
+
+	<script type="text/javascript">
+	$(document).keypress(function(event){
+		var keycode = (event.keyCode ? event.keyCode : event.which);
+		if(keycode == '13'){
+			$("#loginForm").valid();
+			$("#login_Submit_Button").click();
+			  return false;
+	  		}
+	});
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	$('#username').keypress(function (e) {
+		if (e.keyCode !=9 && e.keyCode != 8 && e.keyCode !=37 && e.keyCode !=39 && e.keyCode !=46) {
+		var regex = new RegExp("^[a-zA-Z_0-9\_]+$");
+	    var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+	    if (regex.test(str)) {
+	        return true;
+	    }
+
+	    e.preventDefault();
+	    return false;
+		}
+	});
+	
+		$(document).ready(function(){
+
+
+			 $.fn.latestUpdateCall();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		});
+	</script>
+	<script type="text/javascript">	
+
+	
+	 $("#forgotPwd").on("click", function() {
+            $("#forgotPwd_Uname").val("");
+	        $("#forgotPwd_Dob").val("");
+	        $("#forgotPwd_Uname-error").empty();
+	        $("#forgotPwd_Dob-error").empty();
+	        $("#passwordMessages").empty();
+	        $("#passwordMessages").empty();
+	        
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		   function validateDate(){
+			   var birthday;
+			   var today = new Date();
+			   var age;
+			   if($('#forgotPwd_Dob').datepicker("getDate") == null){
+				   birthday="";
+			   }else{
+			   		birthday = $('#forgotPwd_Dob').datepicker("getDate");
+			   		age = ((today.getMonth() > birthday.getMonth()) || (today.getMonth() == birthday.getMonth() && today.getDate() >= birthday.getDate())) ? today.getFullYear() - birthday.getFullYear() : today.getFullYear() - birthday.getFullYear()-1;
+			   }
+			   
+			   if(age<18){
+				var message="Age should be greater than 18";
+				    $("#forgotPwd_Uname-error").empty();
+			        $("#forgotPwd_Dob-error").empty();
+			        $("#passwordMessages").empty();
+			        $("#passwordMessages").empty();
+		        $('#passwordMessages').append('<font color="red">'+message+'</font>');
+			   	
+			   	$("#forgotPwd_Dob").val("");
+			   }
+			   }
+		
+		 function fpwdpop() {
+		  	$(".pop_backdrop").show();
+		 }
+		       function l_update() {
+		    	   	$(".pop_update").show();
+		       }
+		       
+		 function closes() {
+			$(".pop_backdrop").hide();
+		 }
+		
+		 function close_update(){
+		    $(".pop_update").hide();
+		 }
+		
+		 
+		 
+			
+			$( document ).ajaxStart(function() {
+				  $( "#loading_ajax" ).show();
+				});
+			
+			$( document ).ajaxComplete(function() {
+				 $( "#loading_ajax" ).hide();
+				});
+			
+			$( document ).ajaxError(function() {
+				$( "#loading_ajax" ).hide();
+			});
+		 
+		 
+		$.fn.authenticationErrors(getParameterByName('p_error_codes_list'));
+		$.fn.carouseldisplay();
+		$('input, textarea').placeholder();
+
+		
+	</script>  
+</html>

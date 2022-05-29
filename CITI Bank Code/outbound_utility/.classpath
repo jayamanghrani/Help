@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="lib/activation.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jaxb-api.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jaxb-impl.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jaxb-xjc.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jaxb1-impl.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jsch-0.1.51.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jsr173_1.0_api.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/log4j-1.2.17.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/ojdbc6.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="lib/mail-1.4.7.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
